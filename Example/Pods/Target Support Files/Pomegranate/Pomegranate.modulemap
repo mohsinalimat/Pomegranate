@@ -1,0 +1,6 @@
+framework module Pomegranate {
+  umbrella header "Pomegranate-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - Pomegranate (0.1.0)
+
+DEPENDENCIES:
+  - Pomegranate (from `../`)
+
+EXTERNAL SOURCES:
+  Pomegranate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Pomegranate: 6eb1486a5a219b6beb83415fbf4704ae0f2bb08d
+
+PODFILE CHECKSUM: b33d52b7a4f2ff61ae8e8efed5a0fa2eecd0c5e8
+
+COCOAPODS: 1.2.0
