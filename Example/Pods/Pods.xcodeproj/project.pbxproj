@@ -34,31 +34,31 @@
 		0CD325E77417F93DDD2AF6905B7AF752 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		1AC3F8D618D5E50BFE4308CED9B5D8CD /* Pods-Pomegranate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1B08BA9696E3A314C92C8CD07B108B /* Pods-Pomegranate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pomegranate_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4A1BF2F7A991F29DDCA47AD978DC04E8 /* Pods-Pomegranate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pomegranate_Example.modulemap"; sourceTree = "<group>"; };
+		4A1BF2F7A991F29DDCA47AD978DC04E8 /* Pods-Pomegranate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pomegranate_Example.modulemap"; sourceTree = "<group>"; };
 		5E5155E7A31583EC7944AD5BF593FBB4 /* Pods-Pomegranate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pomegranate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5F573607C6EBE98D8049D6CEA87B1922 /* Pomegranate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pomegranate-prefix.pch"; sourceTree = "<group>"; };
 		674EC194EEE969A1326F414A1AC01297 /* Pods-Pomegranate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pomegranate_Example-dummy.m"; sourceTree = "<group>"; };
-		6D187F830756964E8266FA8FF8F04E64 /* Pods_Pomegranate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D187F830756964E8266FA8FF8F04E64 /* Pods_Pomegranate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pomegranate_Example.framework; path = "Pods-Pomegranate_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1637EDC4D9C38998EACB1F5365991B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		721749D979E6A2CC3525731950A32927 /* Pods-Pomegranate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		768B5A5EAFE19FB372AECAFEDD7D7E5D /* Pods-Pomegranate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		90C639527ED7CDDBEC9C96DA1E9EE482 /* Pods-Pomegranate_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Tests-resources.sh"; sourceTree = "<group>"; };
 		910D816CBB7B36E11FECA4E8A2140ACA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95D74323B7FAB7436EC2DBFB3FBD5EAF /* Pods-Pomegranate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9B08AF2852012192772B178F25D7ABFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A064A09AEE78910C794397F823059B20 /* Pods-Pomegranate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A32E9D738BCBD204DA35E2B21637C4DD /* Pods-Pomegranate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pomegranate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA7CD2F01BF8DE05200876B529B496FE /* Pods-Pomegranate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pomegranate_Example-umbrella.h"; sourceTree = "<group>"; };
-		AEC1E99DEFCC0F09F44B05F96F77FDCF /* Pods_Pomegranate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC1E99DEFCC0F09F44B05F96F77FDCF /* Pods_Pomegranate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pomegranate_Tests.framework; path = "Pods-Pomegranate_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB1546C44BEEC54E7DD1BBB6D5A57F5 /* Pods-Pomegranate_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pomegranate_Tests-dummy.m"; sourceTree = "<group>"; };
 		B16FEF110672EE37C0C7C3358F86BCDE /* Pods-Pomegranate_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B3E1745F30C727A2A018845B21AAEB55 /* Pomegranate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pomegranate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E1745F30C727A2A018845B21AAEB55 /* Pomegranate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pomegranate.framework; path = Pomegranate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7E3CE1EC28182CE69BF73ACBC4013F /* Pods-Pomegranate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pomegranate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF65B179D81E1F443FF126BF470DE82B /* Pods-Pomegranate_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pomegranate_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DCB455EE91DC50A0690754F00F2191AB /* Pomegranate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pomegranate.modulemap; sourceTree = "<group>"; };
-		DCF3F18A0F792DC27172F04860EF13D4 /* Pods-Pomegranate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pomegranate_Tests.modulemap"; sourceTree = "<group>"; };
+		DCB455EE91DC50A0690754F00F2191AB /* Pomegranate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pomegranate.modulemap; sourceTree = "<group>"; };
+		DCF3F18A0F792DC27172F04860EF13D4 /* Pods-Pomegranate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pomegranate_Tests.modulemap"; sourceTree = "<group>"; };
 		E67AEFA65B9E11FA11A6E4A4BEE9C454 /* Pomegranate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pomegranate-dummy.m"; sourceTree = "<group>"; };
 		F7067C8B5EEB661F0E9DC497860B6DDE /* Pomegranate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pomegranate.xcconfig; sourceTree = "<group>"; };
 		FF6E21DC0DCBBC41CA24D5AD114F5892 /* Pods-Pomegranate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Example-resources.sh"; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 			children = (
 				0CD325E77417F93DDD2AF6905B7AF752 /* ReplaceMe.swift */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -146,6 +147,7 @@
 			children = (
 				0A22ABAD1CC4F6C3CC1E8D7BAC61995D /* Classes */,
 			);
+			name = Pomegranate;
 			path = Pomegranate;
 			sourceTree = "<group>";
 		};
@@ -312,14 +314,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					27C1595BE7A42D612773F6517F06F0C5 = {
-						LastSwiftMigration = 0820;
-					};
-					8C8B171ADAAE7E4D8C887B0B6EA1815A = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -517,12 +511,44 @@
 				PRODUCT_NAME = Pods_Pomegranate_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		9A199397D14AC55813CEC813D9F97F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7067C8B5EEB661F0E9DC497860B6DDE /* Pomegranate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pomegranate/Pomegranate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pomegranate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pomegranate/Pomegranate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pomegranate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -598,47 +624,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		AEEF9732F28743A87278798B4A6B0B8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7067C8B5EEB661F0E9DC497860B6DDE /* Pomegranate.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pomegranate/Pomegranate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pomegranate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pomegranate/Pomegranate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Pomegranate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2347CD0BCF16A1E6708391FC9A5EF08 /* Release */ = {
+		DE25EB3AD0C0B659B4BCA6CAF9EE927B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7067C8B5EEB661F0E9DC497860B6DDE /* Pomegranate.xcconfig */;
 			buildSettings = {
@@ -703,8 +695,8 @@
 		5C11324BD28D1080E7BD440AC8ACA06D /* Build configuration list for PBXNativeTarget "Pomegranate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEEF9732F28743A87278798B4A6B0B8B /* Debug */,
-				E2347CD0BCF16A1E6708391FC9A5EF08 /* Release */,
+				9A199397D14AC55813CEC813D9F97F40 /* Debug */,
+				DE25EB3AD0C0B659B4BCA6CAF9EE927B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
