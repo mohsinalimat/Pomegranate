@@ -7,7 +7,7 @@
 //
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     enum GradientType{
         
@@ -36,7 +36,7 @@ extension UIView {
         }
     }
     
-    func addGradient(beginingColor: UIColor, endingColor: UIColor, type: GradientType, animated: Bool){
+    public func addGradient(beginingColor: UIColor, endingColor: UIColor, type: GradientType, animated: Bool){
         
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
@@ -56,7 +56,7 @@ extension UIView {
         // Maybe add the posibility to add a gradient of more then one color
     }
     
-    func deleteGradient(animated: Bool){
+    public func deleteGradient(animated: Bool){
         
         if(animated){
             UIView.transition(with: self, duration: 0.5, options: .transitionCrossDissolve , animations: {for layers in self.layer.sublayers! {
