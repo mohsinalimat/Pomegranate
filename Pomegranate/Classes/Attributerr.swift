@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public class Attributerr{
-    public static sharedInstance = Attributerr()
+    public static let sharedInstance = Attributerr()
     
     
 }
