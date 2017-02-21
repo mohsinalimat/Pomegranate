@@ -81,6 +81,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Downloaderr View Controller-->
+        <scene sceneID="E2X-oa-QMi">
+            <objects>
+                <viewController storyboardIdentifier="Downloaderr" id="La6-6w-ZqB" customClass="DownloaderrViewController" customModule="Pomegranate_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEM-pd-eHz"/>
+                        <viewControllerLayoutGuide type="bottom" id="quY-gl-M1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9rc-UN-GEh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JvE-XP-ITn">
+                                <rect key="frame" x="40" y="40" width="240" height="508"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SIb-bD-91G">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="448"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-dC-ae7">
+                                        <rect key="frame" x="85.5" y="448" width="69" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tX8-6z-wtA"/>
+                                        </constraints>
+                                        <state key="normal" title="Download"/>
+                                        <connections>
+                                            <action selector="downloadImagePressed:" destination="La6-6w-ZqB" eventType="touchUpInside" id="4Vq-pR-Si9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JvE-XP-ITn" firstAttribute="leading" secondItem="9rc-UN-GEh" secondAttribute="leadingMargin" constant="24" id="0db-wt-jhz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JvE-XP-ITn" secondAttribute="trailing" constant="24" id="9Td-OY-OXO"/>
+                            <constraint firstItem="JvE-XP-ITn" firstAttribute="centerX" secondItem="9rc-UN-GEh" secondAttribute="centerX" id="YO6-x5-Iyx"/>
+                            <constraint firstItem="quY-gl-M1x" firstAttribute="top" secondItem="JvE-XP-ITn" secondAttribute="bottom" constant="20" id="ppa-S8-BfM"/>
+                            <constraint firstItem="JvE-XP-ITn" firstAttribute="top" secondItem="UEM-pd-eHz" secondAttribute="bottom" constant="20" id="yDT-ro-c8H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SIb-bD-91G" id="hgF-oW-loe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiX-O3-ghs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="655"/>
+        </scene>
         <!--Gradient View Controller-->
         <scene sceneID="jvn-3A-0s3">
             <objects>
@@ -94,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-io-RUh">
-                                <rect key="frame" x="54.5" y="483" width="212" height="65"/>
+                                <rect key="frame" x="54" y="483" width="212" height="65"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="NC4-Kt-rgC">
                                         <rect key="frame" x="0.0" y="0.0" width="212" height="30"/>
