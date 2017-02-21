@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06261088C932FFF73DA8AAEC82FF05F2 /* Attributerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258D2773FA1C3EF86B839265BB3AF69C /* Attributerr.swift */; };
 		3D33A56A3708A5FBA27C5C014AE60200 /* Pomegranate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A16FCED37E7395B6B653F204B9F490E /* Pomegranate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FE5C737D502C4A7C5CD4BED0744EC9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		5458F467B04A3719E6CFDA3F3029E8BC /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979B70E117BB174A81D064F5B0B385BF /* ImageCache.swift */; };
 		7641607A2A62C08FE2B2B83AE738C93B /* Pods-Pomegranate_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB1546C44BEEC54E7DD1BBB6D5A57F5 /* Pods-Pomegranate_Tests-dummy.m */; };
+		7CF5CACE296A7FA4DC688D428D69A476 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1D9D731E5D65777BB869EF7DA6022 /* ImageCache.swift */; };
+		8709D0C615BDD1D6EA696703E89B3C91 /* UIView+Gradienterr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8B3DD72D03B1F07DA009F343588271 /* UIView+Gradienterr.swift */; };
 		90A01818B46D671883C134D1C58CD891 /* Pods-Pomegranate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7CD2F01BF8DE05200876B529B496FE /* Pods-Pomegranate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B057AE59B5526A950050F4711BB0DD49 /* UIView+Gradienterr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB690226F630B5B54563058F7E49C97E /* UIView+Gradienterr.swift */; };
 		BC3ECC5BBEDC5C7D658F51A09CFE2540 /* Pods-Pomegranate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 674EC194EEE969A1326F414A1AC01297 /* Pods-Pomegranate_Example-dummy.m */; };
-		D3F3ACD02F25A4FE3F48B24C134BDC37 /* Pomegranate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AEFA65B9E11FA11A6E4A4BEE9C454 /* Pomegranate-dummy.m */; };
+		C9DA85938529CCD04487438F51A3EC55 /* UIImageView+Downloaderr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F707AF3741BDFB9CF9D3098AA1544E /* UIImageView+Downloaderr.swift */; };
 		ECEDD3F397A9089FF2639A6F76F25A58 /* Pods-Pomegranate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1B08BA9696E3A314C92C8CD07B108B /* Pods-Pomegranate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F49BE7DC0E3E463EB82EC47574002AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FBEF148E714F12223B52531BE2758B3C /* UIImageView+Downloaderr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07C12501556F540D8B2735601F6FA3 /* UIImageView+Downloaderr.swift */; };
+		F675237E9773F5C61AA624A9FB77B885 /* Pomegranate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AEFA65B9E11FA11A6E4A4BEE9C454 /* Pomegranate-dummy.m */; };
 		FC3322DE086746B9F91CD7B6D3E1A875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +36,7 @@
 		0A16FCED37E7395B6B653F204B9F490E /* Pomegranate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pomegranate-umbrella.h"; sourceTree = "<group>"; };
 		1AC3F8D618D5E50BFE4308CED9B5D8CD /* Pods-Pomegranate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1B08BA9696E3A314C92C8CD07B108B /* Pods-Pomegranate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pomegranate_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2E07C12501556F540D8B2735601F6FA3 /* UIImageView+Downloaderr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloaderr.swift"; sourceTree = "<group>"; };
+		258D2773FA1C3EF86B839265BB3AF69C /* Attributerr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Attributerr.swift; sourceTree = "<group>"; };
 		4A1BF2F7A991F29DDCA47AD978DC04E8 /* Pods-Pomegranate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pomegranate_Example.modulemap"; sourceTree = "<group>"; };
 		5E5155E7A31583EC7944AD5BF593FBB4 /* Pods-Pomegranate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pomegranate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5F573607C6EBE98D8049D6CEA87B1922 /* Pomegranate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pomegranate-prefix.pch"; sourceTree = "<group>"; };
@@ -44,11 +45,11 @@
 		6F1637EDC4D9C38998EACB1F5365991B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		721749D979E6A2CC3525731950A32927 /* Pods-Pomegranate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		768B5A5EAFE19FB372AECAFEDD7D7E5D /* Pods-Pomegranate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8B3DD72D03B1F07DA009F343588271 /* UIView+Gradienterr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Gradienterr.swift"; sourceTree = "<group>"; };
 		90C639527ED7CDDBEC9C96DA1E9EE482 /* Pods-Pomegranate_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Tests-resources.sh"; sourceTree = "<group>"; };
 		910D816CBB7B36E11FECA4E8A2140ACA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95D74323B7FAB7436EC2DBFB3FBD5EAF /* Pods-Pomegranate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pomegranate_Example.release.xcconfig"; sourceTree = "<group>"; };
-		979B70E117BB174A81D064F5B0B385BF /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		9B08AF2852012192772B178F25D7ABFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A064A09AEE78910C794397F823059B20 /* Pods-Pomegranate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A32E9D738BCBD204DA35E2B21637C4DD /* Pods-Pomegranate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pomegranate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -59,10 +60,11 @@
 		B3E1745F30C727A2A018845B21AAEB55 /* Pomegranate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pomegranate.framework; path = Pomegranate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7E3CE1EC28182CE69BF73ACBC4013F /* Pods-Pomegranate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pomegranate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF65B179D81E1F443FF126BF470DE82B /* Pods-Pomegranate_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pomegranate_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CB690226F630B5B54563058F7E49C97E /* UIView+Gradienterr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Gradienterr.swift"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D5E1D9D731E5D65777BB869EF7DA6022 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		DCB455EE91DC50A0690754F00F2191AB /* Pomegranate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pomegranate.modulemap; sourceTree = "<group>"; };
 		DCF3F18A0F792DC27172F04860EF13D4 /* Pods-Pomegranate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pomegranate_Tests.modulemap"; sourceTree = "<group>"; };
+		E4F707AF3741BDFB9CF9D3098AA1544E /* UIImageView+Downloaderr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloaderr.swift"; sourceTree = "<group>"; };
 		E67AEFA65B9E11FA11A6E4A4BEE9C454 /* Pomegranate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pomegranate-dummy.m"; sourceTree = "<group>"; };
 		F7067C8B5EEB661F0E9DC497860B6DDE /* Pomegranate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pomegranate.xcconfig; sourceTree = "<group>"; };
 		FF6E21DC0DCBBC41CA24D5AD114F5892 /* Pods-Pomegranate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pomegranate_Example-resources.sh"; sourceTree = "<group>"; };
@@ -105,30 +107,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		13BD0D9CE65A31259692732CFE8782A5 /* Pomegranate */ = {
-			isa = PBXGroup;
-			children = (
-				417A40AA8E5B2A2F85B81424395C2176 /* Classes */,
-			);
-			name = Pomegranate;
-			path = Pomegranate;
-			sourceTree = "<group>";
-		};
-		417A40AA8E5B2A2F85B81424395C2176 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				979B70E117BB174A81D064F5B0B385BF /* ImageCache.swift */,
-				2E07C12501556F540D8B2735601F6FA3 /* UIImageView+Downloaderr.swift */,
-				CB690226F630B5B54563058F7E49C97E /* UIView+Gradienterr.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		4723782BE60E9E2DC49F293469FE9837 /* Pomegranate */ = {
 			isa = PBXGroup;
 			children = (
-				13BD0D9CE65A31259692732CFE8782A5 /* Pomegranate */,
+				ECF41261AC34531469CB94E655918C77 /* Pomegranate */,
 				4983D52F719636F9E0AFC361179950F4 /* Support Files */,
 			);
 			name = Pomegranate;
@@ -230,6 +212,27 @@
 			path = "Target Support Files/Pods-Pomegranate_Tests";
 			sourceTree = "<group>";
 		};
+		EB6BD0FC6AA0C4CBDDB9AEB6CDA8B6AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				258D2773FA1C3EF86B839265BB3AF69C /* Attributerr.swift */,
+				D5E1D9D731E5D65777BB869EF7DA6022 /* ImageCache.swift */,
+				E4F707AF3741BDFB9CF9D3098AA1544E /* UIImageView+Downloaderr.swift */,
+				7F8B3DD72D03B1F07DA009F343588271 /* UIView+Gradienterr.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ECF41261AC34531469CB94E655918C77 /* Pomegranate */ = {
+			isa = PBXGroup;
+			children = (
+				EB6BD0FC6AA0C4CBDDB9AEB6CDA8B6AA /* Classes */,
+			);
+			name = Pomegranate;
+			path = Pomegranate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -299,7 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C11324BD28D1080E7BD440AC8ACA06D /* Build configuration list for PBXNativeTarget "Pomegranate" */;
 			buildPhases = (
-				D944CD52AA9E49726EC794238D799CE7 /* Sources */,
+				33409FD8C5087CD701C014434608D895 /* Sources */,
 				956B279996480D70846845B9F5548595 /* Frameworks */,
 				B15A3644C9A3F66A642B904EC67F20FF /* Headers */,
 			);
@@ -341,6 +344,18 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33409FD8C5087CD701C014434608D895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06261088C932FFF73DA8AAEC82FF05F2 /* Attributerr.swift in Sources */,
+				7CF5CACE296A7FA4DC688D428D69A476 /* ImageCache.swift in Sources */,
+				F675237E9773F5C61AA624A9FB77B885 /* Pomegranate-dummy.m in Sources */,
+				C9DA85938529CCD04487438F51A3EC55 /* UIImageView+Downloaderr.swift in Sources */,
+				8709D0C615BDD1D6EA696703E89B3C91 /* UIView+Gradienterr.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55228F0F0231951B6A8C9BFB625080E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,17 +369,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7641607A2A62C08FE2B2B83AE738C93B /* Pods-Pomegranate_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D944CD52AA9E49726EC794238D799CE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5458F467B04A3719E6CFDA3F3029E8BC /* ImageCache.swift in Sources */,
-				D3F3ACD02F25A4FE3F48B24C134BDC37 /* Pomegranate-dummy.m in Sources */,
-				FBEF148E714F12223B52531BE2758B3C /* UIImageView+Downloaderr.swift in Sources */,
-				B057AE59B5526A950050F4711BB0DD49 /* UIView+Gradienterr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
