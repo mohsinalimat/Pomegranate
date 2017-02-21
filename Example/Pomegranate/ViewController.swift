@@ -11,7 +11,7 @@ import Pomegranate
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let titles : [String] = ["Gradienter", "To be done..."]
+    let titles : [String] = ["Gradienter", "Downloaderr","To be done..."]
     
     @IBOutlet weak var tableView: UITableView!
 
