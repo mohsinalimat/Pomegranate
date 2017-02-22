@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-public struct Attributerr{
+public class Attributerr{
+    
+    public static let sharedAttributerr = Attributerr()
     
     public func colorSubstring(color : UIColor, substring : String, fullString : String) -> NSAttributedString{
         let range = (fullString as NSString).range(of: substring)
@@ -21,5 +23,9 @@ public struct Attributerr{
     }
     
     
+    
+}
+
+public extension String {
     
 }
