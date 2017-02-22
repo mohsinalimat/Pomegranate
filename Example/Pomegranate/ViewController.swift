@@ -11,7 +11,7 @@ import Pomegranate
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let titles : [String] = ["Gradienter", "Downloaderr","To be done..."]
+    let titles : [String] = ["Gradienter","Downloaderr","Dates","To be done..."]
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -19,7 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
