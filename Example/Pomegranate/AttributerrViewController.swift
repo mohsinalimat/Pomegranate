@@ -9,7 +9,10 @@
 import UIKit
 
 class AttributerrViewController: UIViewController {
+    
+    @IBOutlet weak var secondLabel: UILabel!
 
+    @IBOutlet weak var firstLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
