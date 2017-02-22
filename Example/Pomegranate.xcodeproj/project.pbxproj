@@ -16,6 +16,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */; };
 		AFFBC70E1E5CE3B9002CEA47 /* DownloaderrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */; };
+		AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */; };
 		CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */; };
 		CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */; };
 		EC3B86BACE6EABF2FDACE430 /* Pods_Pomegranate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */; };
@@ -48,6 +49,7 @@
 		AED386188AF23E90F2A09EB2 /* Pomegranate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pomegranate.podspec; path = ../Pomegranate.podspec; sourceTree = "<group>"; };
 		AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 		AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloaderrViewController.swift; sourceTree = "<group>"; };
+		AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributerrViewController.swift; sourceTree = "<group>"; };
 		CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesFormaterrViewController.swift; sourceTree = "<group>"; };
 		CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
 		DB044C7CB143757D5AA02D7C /* Pods_Pomegranate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */,
 				CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */,
 				CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */,
+				AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */,
 			);
 			name = "Example for Pomegranate";
 			path = Pomegranate;
@@ -379,6 +382,7 @@
 				CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */,
 				CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */,
 				AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */,
+				AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
