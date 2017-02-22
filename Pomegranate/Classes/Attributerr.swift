@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+/*
+ NSBackgroundColorAttributeName: NSColor
+ NSBaselineOffsetAttributeName: NSNumber (Float)
+ NSFontAttributeName: NSFont
+ NSForegroundColorAttributeName: NSColor
+ NSUnderlineStyleAttributeName: NSNumber (Int)
+ */
+
 public class Attributerr{
     
     public static let sharedAttributerr = Attributerr()
@@ -21,11 +29,4 @@ public class Attributerr{
         
         return attribute
     }
-    
-    
-    
-}
-
-public extension String {
-    
 }
