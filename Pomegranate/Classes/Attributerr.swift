@@ -9,8 +9,17 @@
 import Foundation
 import UIKit
 
-public class Attributerr{
-    public static let sharedInstance = Attributerr()
+public struct Attributerr{
+    
+    public func colorSubstring(color : UIColor, substring : String, fullString : String) -> NSAttributedString{
+        let range = (fullString as NSString).range(of: substring)
+        
+        let attribute = NSMutableAttributedString.init(string: fullString)
+        attribute.addAttribute(NSForegroundColorAttributeName, value: color , range: range)
+        
+        return attribute
+    }
+    
     
     
 }
