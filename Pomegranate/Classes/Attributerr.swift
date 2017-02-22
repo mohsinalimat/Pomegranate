@@ -29,4 +29,14 @@ public class Attributerr{
         
         return attribute
     }
+    
+    public func createString(string: String ,backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0) -> NSAttributedString{
+        let attributes: [String: Any] = [
+            NSForegroundColorAttributeName: color,
+            NSFontAttributeName: font,
+            NSUnderlineStyleAttributeName: underLineStyle,NSBackgroundColorAttributeName: backgroundColor
+            ]
+        let attributed = NSAttributedString(string: string, attributes: attributes)
+        return attributed
+    }
 }
