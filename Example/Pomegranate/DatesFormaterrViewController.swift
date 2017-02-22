@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 import Pomegranate
 
-class DatesViewController: UIViewController {
+class DateFormatterrViewController: UIViewController {
     
-    let dateFormatter = Dates()
+    let dateFormatter = DateFormatterr()
     let dates = [Date(),Date(timeIntervalSinceNow: (60*60*24) * -1),Date(timeIntervalSinceNow: (60*60*24*367) * -1)]
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class DatesViewController: UIViewController {
     }
 }
 
-extension DatesViewController: UITableViewDataSource {
+extension DateFormatterrViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dates.count

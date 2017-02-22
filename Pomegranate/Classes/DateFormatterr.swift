@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Dates {
+public class DateFormatterr {
     
     public init () {
 

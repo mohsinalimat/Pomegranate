@@ -46,7 +46,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p1b-bR-My9" id="cd7-a8-pMm">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1284" y="134"/>
         </scene>
-        <!--Dates View Controller-->
+        <!--Date Formatterr View Controller-->
         <scene sceneID="2st-oV-cWj">
             <objects>
-                <viewController storyboardIdentifier="Dates" id="Z7Z-EG-IOk" customClass="DatesViewController" customModule="Pomegranate_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DateFormatterr" id="Z7Z-EG-IOk" customClass="DateFormatterrViewController" customModule="Pomegranate_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NQU-7d-mAY"/>
                         <viewControllerLayoutGuide type="bottom" id="aKD-44-EzD"/>
