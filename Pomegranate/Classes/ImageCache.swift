@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public class ImageCache{
-     static let sharedImageCache = ImageCache()
+    static let sharedImageCache = ImageCache()
     let cache = NSCache<NSURL, AnyObject>()
     
     func checkCacheForImage(url: NSURL)->UIImage?{

@@ -9,16 +9,19 @@
 import Foundation
 
 public class Dates {
-    static let sharedDates = Dates()
     
-    func stringToDate(_ string:String,dateFormat:String) -> Date? {
+    public init () {
+
+    }
+
+    public func stringToDate(_ string:String,dateFormat:String) -> Date? {
         let dateFormatter = Foundation.DateFormatter()
         dateFormatter.dateFormat = dateFormat
         
         return dateFormatter.date( from: string )
     }
     
-    func timeAgo(_ date:Date) -> String {
+    public func timeAgo(_ date:Date) -> String {
         let timeIntervalInDays = Int(date.timeIntervalSinceNow/(60*60*24) * -1)
         let timeIntervalInYears = Int(date.timeIntervalSinceNow/(60*60*24*365) * -1)
         
