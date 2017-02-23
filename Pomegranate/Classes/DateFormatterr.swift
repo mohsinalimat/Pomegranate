@@ -20,6 +20,14 @@ public class DateFormatterr {
     public func dayInSeconds() -> Int {return 864000}
     public func yearInSeconds() -> Int {return 31536000}
     
+    //Time intervals
+    func timeIntervalInDaysSinceNow(date:Date) -> Double {
+        return date.timeIntervalSinceNow / Double(dayInSeconds())
+    }
+    
+    func timeIntervalInYearsSinceNow(date:Date) -> Double {
+        return date.timeIntervalSinceNow / Double(yearInSeconds())
+    }
     
     //Converting strings to dates
     public func stringToDate(string:String,dateFormat:String) -> Date? {
