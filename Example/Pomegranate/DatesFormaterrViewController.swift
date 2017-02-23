@@ -29,7 +29,7 @@ extension DateFormatterrViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DateTableViewCell
         cell.DateLabel.text = "Date: \(dates[indexPath.row])"
-        cell.DateWithFormatLabel.text = "Date with format: \(dateFormatter.timeAgo(dates[indexPath.row]))"
+        cell.DateWithFormatLabel.text = "Date with format: \(dateFormatter.timeAgo(date: dates[indexPath.row]))"
         return cell
     }
 }

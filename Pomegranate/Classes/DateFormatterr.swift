@@ -13,15 +13,24 @@ public class DateFormatterr {
     public init () {
 
     }
-
-    public func stringToDate(_ string:String,dateFormat:String) -> Date? {
+    
+    //Time in seconds
+    public func minutesInSeconds() -> Int {return 60}
+    public func hourInSeconds() -> Int {return 3600}
+    public func dayInSeconds() -> Int {return 864000}
+    public func yearInSeconds() -> Int {return 31536000}
+    
+    
+    //Converting strings to dates
+    public func stringToDate(string:String,dateFormat:String) -> Date? {
         let dateFormatter = Foundation.DateFormatter()
         dateFormatter.dateFormat = dateFormat
         
         return dateFormatter.date( from: string )
     }
     
-    public func timeAgo(_ date:Date) -> String {
+    //Converting dates to strings
+    public func timeAgo(date:Date) -> String {
         let timeIntervalInDays = Int(date.timeIntervalSinceNow/(60*60*24) * -1)
         let timeIntervalInYears = Int(date.timeIntervalSinceNow/(60*60*24*365) * -1)
         
