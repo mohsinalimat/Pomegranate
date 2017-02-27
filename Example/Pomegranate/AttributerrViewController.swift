@@ -17,6 +17,7 @@ class AttributerrViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         firstLabel.attributedText = Attributerr.sharedAttributerr.createString(string: "Hola", backgroundColor: .red, font: .systemFont(ofSize: 20), color: .blue, underLineStyle: 0)
+        secondLabel.attributedText = Attributerr.sharedAttributerr.createString(string: "Part 2", backgroundColor: .cyan, font: .systemFont(ofSize: 24), color: .gray, underLineStyle: 1)
 
         // Do any additional setup after loading the view.
     }
