@@ -30,6 +30,22 @@ public class Attributerr{
         return attribute
     }
     
+    public func addAttributeToSubstring(fullString: String, substring: String, backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0 )->NSAttributedString{
+        
+        let range = (fullString as NSString).range(of: substring)
+        let attribute = NSMutableAttributedString.init(string: fullString)
+
+        let attributes: [String: Any] = [
+            NSForegroundColorAttributeName: color,
+            NSFontAttributeName: font,
+            NSUnderlineStyleAttributeName: underLineStyle,NSBackgroundColorAttributeName: backgroundColor
+        ]
+        
+        attribute.addAttributes(attributes, range: range)
+        return attribute
+        
+    }
+    
     public func createString(string: String ,backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0) -> NSAttributedString{
         let attributes: [String: Any] = [
             NSForegroundColorAttributeName: color,
