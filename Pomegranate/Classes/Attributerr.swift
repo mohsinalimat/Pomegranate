@@ -39,4 +39,22 @@ public class Attributerr{
         let attributed = NSAttributedString(string: string, attributes: attributes)
         return attributed
     }
+    
+//    public var string : String = ""
+//    public var backgroundColor : UIColor = .clear
+//    public var font : UIFont = UIFont(name: "System", size: 12)!
+//    public var color : UIColor = .black
+//    public var underlineStyle : Int = 0
+//    public var text : NSAttributedString = NSAttributedString()
+//
+//   public init() {
+//        let attributes: [String: Any] = [
+//            NSForegroundColorAttributeName: color,
+//            NSFontAttributeName: font,
+//            NSUnderlineStyleAttributeName: underlineStyle,NSBackgroundColorAttributeName: backgroundColor
+//        ]
+//
+//        text = NSAttributedString(string: string, attributes: attributes)
+//
+//    }
 }
