@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pomegranate
 
 class AttributerrViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class AttributerrViewController: UIViewController {
     @IBOutlet weak var firstLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstLabel.attributedText = Attributerr.sharedAttributerr.createString(string: "Hola", backgroundColor: .red, font: .systemFont(ofSize: 20), color: .blue, underLineStyle: 0)
 
         // Do any additional setup after loading the view.
     }
