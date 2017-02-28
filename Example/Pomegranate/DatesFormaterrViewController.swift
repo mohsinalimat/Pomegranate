@@ -12,8 +12,7 @@ import Pomegranate
 
 class DateFormatterrViewController: UIViewController {
     
-    let dateFormatter = DateFormatterr()
-    let dates = [Date(),Date(timeIntervalSinceNow: (60*60*24) * -1),Date(timeIntervalSinceNow: (60*60*24*367) * -1)]
+    let dates = [Date(),Date(timeIntervalSinceNow: 86400 * -1),Date(dateInString: "15/03/1995", dateFormat: "dd/MM/yyyy")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,8 @@ extension DateFormatterrViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DateTableViewCell
         cell.DateLabel.text = "Date: \(dates[indexPath.row])"
-        cell.DateWithFormatLabel.text = "Date with format: \(dateFormatter.timeAgo(date: dates[indexPath.row]))"
+        cell.DateWithFormatLabel.text = "Date with format: \(dates[indexPath.row].toTimeAgo())"
         return cell
     }
 }
+

@@ -8,54 +8,73 @@
 
 import Foundation
 
-public class DateFormatterr {
-    
-    public init () {
-
-    }
+public extension Date {
     
     //Time in seconds
-    public func minutesInSeconds() -> Int {return 60}
-    public func hourInSeconds() -> Int {return 3600}
-    public func dayInSeconds() -> Int {return 864000}
-    public func yearInSeconds() -> Int {return 31536000}
+    private var minutesInSeconds:Double { return 60 }
+    private var hourInSeconds:Double { return 3600 }
+    private var dayInSeconds:Double { return 86400 }
+    private var yearInSeconds:Double { return 31536000 }
     
-    //Time intervals
-    func timeIntervalInDaysSinceNow(date:Date) -> Double {
-        return date.timeIntervalSinceNow / Double(dayInSeconds())
+    //MARK: - Time intervals
+    
+    func timeIntervalInDaysSinceNow() -> Double {
+        return self.timeIntervalSinceNow / dayInSeconds
     }
     
-    func timeIntervalInYearsSinceNow(date:Date) -> Double {
-        return date.timeIntervalSinceNow / Double(yearInSeconds())
+    func timeIntervalInYearsSinceNow() -> Double {
+        return self.timeIntervalSinceNow / yearInSeconds
     }
     
-    //Converting strings to dates
-    public func stringToDate(string:String,dateFormat:String) -> Date? {
+    //MARK: - Creating dates
+    
+    init?(dateInString:String, dateFormat:String) {
+        
+        guard !dateInString.isEmpty else {
+            return nil
+        }
+        
         let dateFormatter = Foundation.DateFormatter()
         dateFormatter.dateFormat = dateFormat
         
-        return dateFormatter.date( from: string )
-    }
-    
-    //Converting dates to strings
-    public func timeAgo(date:Date) -> String {
-        let timeIntervalInDays = Int(date.timeIntervalSinceNow/(60*60*24) * -1)
-        let timeIntervalInYears = Int(date.timeIntervalSinceNow/(60*60*24*365) * -1)
+        guard let date = dateFormatter.date( from: dateInString ) else {
+            return nil
+        }
         
-        if timeIntervalInYears >= 1 {
-            if timeIntervalInYears == 1 {
-                return "1 year and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
-            }
+        self.init(timeInterval: 0, since: date)
+    }
+   
+    //MARK: - Dates to strings
+    
+    func toTimeAgo() -> String {
+        let timeIntervalInDays = Int(self.timeIntervalInDaysSinceNow() * -1)
+        let timeIntervalInYears = Int(self.timeIntervalInYearsSinceNow() * -1)
+        
+        if timeIntervalInYears == 1 && timeIntervalInDays == 0 {
+            return "1 year ago"
+        }
+        
+        if timeIntervalInYears == 1 && timeIntervalInDays == 1 {
+            return "1 year and 1 day ago"
+        }
+        
+        if timeIntervalInYears == 1 && timeIntervalInDays > 1 {
+            return "1 year and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
+        }
+
+        if timeIntervalInYears > 1 {
             return "\(timeIntervalInYears) years and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
         }
-        else if timeIntervalInDays >= 1 {
-            if timeIntervalInDays == 1 {
-                return "1 day ago"
-            }
+        
+        if timeIntervalInDays == 1 {
+            return "1 day ago"
+        }
+        
+        if timeIntervalInDays > 1 {
+            
             return "\(timeIntervalInDays) days ago"
         }
-        else {
-            return "A moment ago"
-        }
+        
+        return "A moment ago"
     }
 }
