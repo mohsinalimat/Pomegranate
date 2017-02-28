@@ -46,6 +46,21 @@ public class Attributerr{
         
     }
     
+    public func addAttributesToRange(string: String, range: NSRange, backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0)->NSAttributedString{
+        
+        let attribute = NSMutableAttributedString.init(string: string)
+        
+        let attributes: [String: Any] = [
+            NSForegroundColorAttributeName: color,
+            NSFontAttributeName: font,
+            NSUnderlineStyleAttributeName: underLineStyle,NSBackgroundColorAttributeName: backgroundColor
+        ]
+        
+        attribute.addAttributes(attributes, range: range)
+        return attribute
+
+    }
+    
     public func createString(string: String ,backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0) -> NSAttributedString{
         let attributes: [String: Any] = [
             NSForegroundColorAttributeName: color,
