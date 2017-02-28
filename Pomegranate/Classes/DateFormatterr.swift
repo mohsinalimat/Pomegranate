@@ -50,7 +50,15 @@ public extension Date {
         let timeIntervalInDays = Int(self.timeIntervalInDaysSinceNow() * -1)
         let timeIntervalInYears = Int(self.timeIntervalInYearsSinceNow() * -1)
         
-        if timeIntervalInYears == 1 {
+        if timeIntervalInYears == 1 && timeIntervalInDays == 0 {
+            return "1 year ago"
+        }
+        
+        if timeIntervalInYears == 1 && timeIntervalInDays == 1 {
+            return "1 year and 1 day ago"
+        }
+        
+        if timeIntervalInYears == 1 && timeIntervalInDays > 1 {
             return "1 year and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
         }
 
