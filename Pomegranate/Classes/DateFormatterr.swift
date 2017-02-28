@@ -11,12 +11,13 @@ import Foundation
 public extension Date {
     
     //Time in seconds
-    var minutesInSeconds:Double { return 60 }
-    var hourInSeconds:Double { return 3600 }
-    var dayInSeconds:Double { return 86400 }
-    var yearInSeconds:Double { return 31536000 }
+    private var minutesInSeconds:Double { return 60 }
+    private var hourInSeconds:Double { return 3600 }
+    private var dayInSeconds:Double { return 86400 }
+    private var yearInSeconds:Double { return 31536000 }
     
-    //Time intervals
+    //MARK: - Time intervals
+    
     func timeIntervalInDaysSinceNow() -> Double {
         return self.timeIntervalSinceNow / dayInSeconds
     }
@@ -25,10 +26,11 @@ public extension Date {
         return self.timeIntervalSinceNow / yearInSeconds
     }
     
-    //Creating dates
+    //MARK: - Creating dates
+    
     init?(dateInString:String, dateFormat:String) {
         
-        guard !dateInString.isEmpty else  {
+        guard !dateInString.isEmpty else {
             return nil
         }
         
@@ -42,11 +44,11 @@ public extension Date {
         self.init(timeInterval: 0, since: date)
     }
    
+    //MARK: - Dates to strings
     
-    //Converting dates to strings
-    func timeAgo(date:Date) -> String {
-        let timeIntervalInDays = Int(date.timeIntervalInDaysSinceNow() * -1)
-        let timeIntervalInYears = Int(date.timeIntervalInYearsSinceNow() * -1)
+    func toTimeAgo() -> String {
+        let timeIntervalInDays = Int(self.timeIntervalInDaysSinceNow() * -1)
+        let timeIntervalInYears = Int(self.timeIntervalInYearsSinceNow() * -1)
         
         if timeIntervalInYears == 1 {
             return "1 year and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
