@@ -12,7 +12,7 @@ import Pomegranate
 
 class DateFormatterrViewController: UIViewController {
     
-    let dates = [Date(),Date(timeIntervalSinceNow: (60*60*24) * -1),Date(timeIntervalSinceNow: (60*60*24*367) * -1)]
+    let dates = [Date(),Date(timeIntervalSinceNow: 86400 * -1),Date(dateInString: "15/03/1995", dateFormat: "dd/MM/yyyy")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,26 +17,36 @@ public extension Date {
     var yearInSeconds:Double { return 31536000 }
     
     //Time intervals
-    func timeIntervalInDaysSinceNow(date:Date) -> Double {
-        return date.timeIntervalSinceNow / dayInSeconds
+    func timeIntervalInDaysSinceNow() -> Double {
+        return self.timeIntervalSinceNow / dayInSeconds
     }
     
-    func timeIntervalInYearsSinceNow(date:Date) -> Double {
-        return date.timeIntervalSinceNow / yearInSeconds
+    func timeIntervalInYearsSinceNow() -> Double {
+        return self.timeIntervalSinceNow / yearInSeconds
     }
     
-    //Converting strings to dates
-    public func stringToDate(string:String,dateFormat:String) -> Date? {
+    //Creating dates
+    init?(dateInString:String, dateFormat:String) {
+        
+        guard !dateInString.isEmpty else  {
+            return nil
+        }
+        
         let dateFormatter = Foundation.DateFormatter()
         dateFormatter.dateFormat = dateFormat
         
-        return dateFormatter.date( from: string )
+        guard let date = dateFormatter.date( from: dateInString ) else {
+            return nil
+        }
+        
+        self.init(timeInterval: 0, since: date)
     }
+   
     
     //Converting dates to strings
     func timeAgo(date:Date) -> String {
-        let timeIntervalInDays = Int(date.timeIntervalInDaysSinceNow(date: date) * -1)
-        let timeIntervalInYears = Int(date.timeIntervalInYearsSinceNow(date: date) * -1)
+        let timeIntervalInDays = Int(date.timeIntervalInDaysSinceNow() * -1)
+        let timeIntervalInYears = Int(date.timeIntervalInYearsSinceNow() * -1)
         
         if timeIntervalInYears == 1 {
             return "1 year and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
@@ -56,6 +66,5 @@ public extension Date {
         }
         
         return "A moment ago"
-        
     }
 }
