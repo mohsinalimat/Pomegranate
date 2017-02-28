@@ -8,7 +8,7 @@
 import UIKit
 
 public extension UIView {
-    
+    // Enum to specify the different types of gradients
     enum GradientType{
         
         case leftToRight
@@ -17,7 +17,7 @@ public extension UIView {
         case bottomToTop
         case diagonalLeftToRight
         case diagonalRightToLeft
-        
+        // Points holds the necessary values to create the gradients
         var points: (startX : Double, startY: Double, endX: Double, endY: Double) {
             switch self{
             case .leftToRight:
