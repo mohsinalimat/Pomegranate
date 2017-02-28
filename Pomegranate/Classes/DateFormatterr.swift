@@ -8,11 +8,7 @@
 
 import Foundation
 
-public class DateFormatterr {
-    
-    public init () {
-
-    }
+extension Date {
     
     //Time in seconds
     public func minutesInSeconds() -> Int {return 60}
