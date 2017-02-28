@@ -12,7 +12,6 @@ import UIKit
 public extension UIImageView{
     public func downloadImageWithPlaceholder(url: NSURL, placeholder: UIImage){
     
-        
         let response = ImageCache.sharedImageCache.checkCacheForImage(url: url)
         if (response != nil ) {
             self.image = response
@@ -37,6 +36,5 @@ public extension UIImageView{
                 })
             }
         }
-
     }
 }
