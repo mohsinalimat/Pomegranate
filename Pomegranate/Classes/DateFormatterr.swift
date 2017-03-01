@@ -62,7 +62,7 @@ public extension Date {
              return timeLanguages?[.minutesAgo] ?? "\(minutes) minutes ago"
         }
         else if days == 1 {
-             return timeLanguages?[.yesterday] ?? "One day ago"
+             return timeLanguages?[.oneDayAgo] ?? "One day ago"
         }
         else if days < 365 {
              return timeLanguages?[.daysAgo] ?? "\(days) days ago"
@@ -79,7 +79,7 @@ public extension Date {
     
     enum TimeRelativeToDate {
         case rightNow
-        case yesterday
+        case oneDayAgo
         case tomorrow
         case oneYearAgo
         case yearsAgo
