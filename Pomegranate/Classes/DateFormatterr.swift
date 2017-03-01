@@ -71,7 +71,7 @@ public extension Date {
             return timeLanguages?[.oneYearAgo] ?? "One year ago"
         }
         else if years > 1 {
-            return timeLanguages?[.yearsAgo] ?? "\(years) years ago"
+            return timeLanguages?[.yearsAgo] ?? "\(years) years and \(days-(years*365)) days ago"
         }
         
         return ""
