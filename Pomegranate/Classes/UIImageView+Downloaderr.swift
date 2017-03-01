@@ -19,9 +19,8 @@ public extension UIImageView{
         }
         else {
             self.image = placeholder
-            let downloadQueue = DispatchQueue(label: "download")
             
-            downloadQueue.async {
+            DispatchQueue.main.async {
             
                 let data = NSData(contentsOf: url as URL)
                 var imageToSet = UIImage()
