@@ -275,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="2693" y="131"/>
         </scene>
-        <!--View Controller-->
+        <!--Colorerr View Controller-->
         <scene sceneID="xq2-eI-tqK">
             <objects>
-                <viewController storyboardIdentifier="Colorerr" id="k3c-dm-xP1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Colorerr" id="k3c-dm-xP1" customClass="ColorerrViewController" customModule="Pomegranate_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BvS-ZO-0gg"/>
                         <viewControllerLayoutGuide type="bottom" id="7Oa-9Q-nqe"/>

@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */; };
+		AF9303FA1E67827400163DC6 /* ColorerrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9303F91E67827400163DC6 /* ColorerrViewController.swift */; };
 		AFFBC70E1E5CE3B9002CEA47 /* DownloaderrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */; };
 		AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */; };
 		CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */; };
@@ -48,6 +49,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		AED386188AF23E90F2A09EB2 /* Pomegranate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pomegranate.podspec; path = ../Pomegranate.podspec; sourceTree = "<group>"; };
 		AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		AF9303F91E67827400163DC6 /* ColorerrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorerrViewController.swift; sourceTree = "<group>"; };
 		AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloaderrViewController.swift; sourceTree = "<group>"; };
 		AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributerrViewController.swift; sourceTree = "<group>"; };
 		CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesFormaterrViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */,
 				CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */,
 				AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */,
+				AF9303F91E67827400163DC6 /* ColorerrViewController.swift */,
 			);
 			name = "Example for Pomegranate";
 			path = Pomegranate;
@@ -384,6 +387,7 @@
 				CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */,
 				CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */,
 				AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */,
+				AF9303FA1E67827400163DC6 /* ColorerrViewController.swift in Sources */,
 				AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
