@@ -74,4 +74,34 @@ public extension UIView {
             }
         }
     }
+    
+    public func addRadialGradient(firstColor:UIColor,secondColor:UIColor){
+ 
+        let context = UIGraphicsGetCurrentContext()
+        
+        let locations: [CGFloat] = [0.0, 0.5, 1.0]
+        
+        let colors = [UIColor.red.cgColor,
+                      UIColor.green.cgColor,
+                      UIColor.cyan.cgColor]
+        
+        let colorspace = CGColorSpaceCreateDeviceRGB()
+        
+        let gradient = CGGradient(colorsSpace: colorspace,
+                                  colors: colors as CFArray, locations: locations)
+        
+        var startPoint =  CGPoint()
+        var endPoint  = CGPoint()
+        
+        startPoint.x = 100
+        startPoint.y = 100
+        endPoint.x = 200
+        endPoint.y = 200
+        let startRadius: CGFloat = 10
+        let endRadius: CGFloat = 75
+        
+        context?.drawRadialGradient(gradient!, startCenter: startPoint,
+                                    startRadius: startRadius, endCenter: endPoint, 
+                                    endRadius: endRadius, options: [])
+    }
 }
