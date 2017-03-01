@@ -28,7 +28,7 @@ extension DateFormatterrViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DateTableViewCell
         cell.DateLabel.text = "Date: \(dates[indexPath.row])"
-        cell.DateWithFormatLabel.text = "Date with format: \(dates[indexPath.row].toTimeAgo())"
+        cell.DateWithFormatLabel.text = "Date with format: \(dates[indexPath.row].toTimeLanguage(timeLanguages: [.rightNow: "Right now",.yesterday: "Yesterday"]))"
         return cell
     }
 }

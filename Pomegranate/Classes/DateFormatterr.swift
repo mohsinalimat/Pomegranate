@@ -46,35 +46,45 @@ public extension Date {
    
     //MARK: - Dates to strings
     
-    func toTimeAgo() -> String {
-        let timeIntervalInDays = Int(self.timeIntervalInDaysSinceNow() * -1)
-        let timeIntervalInYears = Int(self.timeIntervalInYearsSinceNow() * -1)
+    func toTimeLanguage(timeLanguages: [TimeRelativeToDate:String]? = nil) -> String {
+        let days = Int(self.timeIntervalInDaysSinceNow() * -1)
+        let years = Int(self.timeIntervalInYearsSinceNow() * -1)
+        let seconds = self.timeIntervalSinceNow * -1
+        let minutes = Int(self.timeIntervalSinceNow / 60) * -1
         
-        if timeIntervalInYears == 1 && timeIntervalInDays == 0 {
-            return "1 year ago"
+        if seconds < 60 {
+            return timeLanguages?[.rightNow] ?? "A moment ago"
+        }
+        else if minutes == 1 {
+             return timeLanguages?[.oneMinuteAgo] ?? "One minute ago"
+        }
+        else if minutes < 60 {
+             return timeLanguages?[.minutesAgo] ?? "\(minutes) minutes ago"
+        }
+        else if days == 1 {
+             return timeLanguages?[.yesterday] ?? "One day ago"
+        }
+        else if days < 365 {
+             return timeLanguages?[.daysAgo] ?? "\(days) days ago"
+        }
+        else if years == 1 {
+            return timeLanguages?[.oneYearAgo] ?? "One year ago"
+        }
+        else if years > 1 {
+            return timeLanguages?[.yearsAgo] ?? "\(years) years ago"
         }
         
-        if timeIntervalInYears == 1 && timeIntervalInDays == 1 {
-            return "1 year and 1 day ago"
-        }
-        
-        if timeIntervalInYears == 1 && timeIntervalInDays > 1 {
-            return "1 year and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
-        }
-
-        if timeIntervalInYears > 1 {
-            return "\(timeIntervalInYears) years and \(timeIntervalInDays-(365*timeIntervalInYears)) days ago"
-        }
-        
-        if timeIntervalInDays == 1 {
-            return "1 day ago"
-        }
-        
-        if timeIntervalInDays > 1 {
-            
-            return "\(timeIntervalInDays) days ago"
-        }
-        
-        return "A moment ago"
+        return ""
+    }
+    
+    enum TimeRelativeToDate {
+        case rightNow
+        case yesterday
+        case tomorrow
+        case oneYearAgo
+        case yearsAgo
+        case daysAgo
+        case minutesAgo
+        case oneMinuteAgo
     }
 }
