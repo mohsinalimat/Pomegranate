@@ -76,45 +76,35 @@ public extension Date {
     }
     
     func convertTo(format:DateFormat) -> String {
+        var stringFormat = ""
       
         switch format {
         case .normal:
-            var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MMM d, yyyy"
-            var dateString = dateFormatter.string(from: self)
-            return dateString
+            stringFormat = "MMM d, yyyy"
             
         case .short:
-            var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-            var dateString = dateFormatter.string(from: self)
-            return dateString
+            stringFormat = "dd/MM/yyyy"
             
         case .long:
-            var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MMMM/yyyy, h:mm a"
-            var dateString = dateFormatter.string(from: self)
-            return dateString
+            stringFormat = "dd/MMM/yyyy, h:mm a"
             
         case .weekDay: 
-            var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "EEEE"
-            var dateString = dateFormatter.string(from: self)
-            return dateString
+            stringFormat = "EEEE"
             
-        default: break
-       
+        case .custom:
+            if case let .custom(text) = format {
+                stringFormat = text
+            }
         }
         
-        var dateString = ""
-        if case let .custom(text) = format {
-            var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = text
-            dateString = dateFormatter.string(from: self)
-        }
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = stringFormat
+        var dateString = dateFormatter.string(from: self)
         
         return dateString
     }
+    
+    //MARK: - Enums
     
     enum DateFormat {
         case normal
