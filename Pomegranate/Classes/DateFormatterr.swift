@@ -70,11 +70,58 @@ public extension Date {
         else if years == 1 {
             return timeLanguages?[.oneYearAgo] ?? "One year ago"
         }
-        else if years > 1 {
+        else {
             return timeLanguages?[.yearsAgo] ?? "\(years) years and \(days-(years*365)) days ago"
         }
+    }
+    
+    func convertTo(format:DateFormat) -> String {
+      
+        switch format {
+        case .normal:
+            var dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM d, yyyy"
+            var dateString = dateFormatter.string(from: self)
+            return dateString
+            
+        case .short:
+            var dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            var dateString = dateFormatter.string(from: self)
+            return dateString
+            
+        case .long:
+            var dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MMMM/yyyy, h:mm a"
+            var dateString = dateFormatter.string(from: self)
+            return dateString
+            
+        case .weekDay: 
+            var dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "EEEE"
+            var dateString = dateFormatter.string(from: self)
+            return dateString
+            
+        default: break
+       
+        }
         
-        return ""
+        var dateString = ""
+        if case let .custom(text) = format {
+            var dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = text
+            dateString = dateFormatter.string(from: self)
+        }
+        
+        return dateString
+    }
+    
+    enum DateFormat {
+        case normal
+        case short
+        case long
+        case weekDay
+        case custom(String)
     }
     
     enum TimeRelativeToDate {

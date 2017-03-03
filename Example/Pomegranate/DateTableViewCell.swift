@@ -12,4 +12,5 @@ class DateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var DateLabel: UILabel!
     @IBOutlet weak var DateWithFormatLabel: UILabel!
+    @IBOutlet weak var DateWithFormatLabel2: UILabel!
 }
