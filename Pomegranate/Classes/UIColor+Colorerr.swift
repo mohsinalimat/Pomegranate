@@ -66,9 +66,9 @@ public extension UIColor{
         }
         
         public struct Orange{
-            public static let regular = UIColor(netHex: 0xffa500)
-            public static let light = UIColor(netHex: 0x885800)
-            public static let dark = UIColor(netHex: 0xffd588)
+            public static let regular = UIColor(netHex: 0xffb833)
+            public static let light = UIColor(netHex: 0xffc966)
+            public static let dark = UIColor(netHex: 0xffa600)
         }
         public struct Pink{
             public static let regular = UIColor(netHex: 0xf7879a)
