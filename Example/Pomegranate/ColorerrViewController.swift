@@ -32,7 +32,7 @@ class ColorerrViewController: UIViewController {
         view2.backgroundColor = UIColor.Colorerr.Blue.dark
         view3.backgroundColor = UIColor.Colorerr.Pink.light
         view4.backgroundColor = UIColor.Colorerr.Pink.dark
-        view5.backgroundColor = UIColor.Colorerr.Orange.regular
+        view5.backgroundColor = UIColor.Colorerr.Orange.light
         view6.backgroundColor = UIColor.Colorerr.Orange.dark
         view7.backgroundColor = UIColor.Colorerr.SocialMedia.twitter
         view8.backgroundColor = UIColor.Colorerr.SocialMedia.facebook
