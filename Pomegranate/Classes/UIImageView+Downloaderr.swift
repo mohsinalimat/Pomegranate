@@ -41,4 +41,35 @@ public extension UIImageView{
             }
         }
     }
+    
+    public func downloadImageFromNSURL(url: NSURL){
+        let response = ImageCache.sharedImageCache.checkCacheForImage(url: url)
+        if (response != nil ) {
+            self.image = response
+            
+        }
+        else {
+            let activityIndicator = UIActivityIndicatorView()
+            activityIndicator.activityIndicatorViewStyle = .white
+            activityIndicator.startAnimating()
+            activityIndicator.center = self.center
+            self.addSubview(activityIndicator)
+            DispatchQueue.main.async {
+                
+                let data = NSData(contentsOf: url as URL)
+                var imageToSet = UIImage()
+                
+                if(data != nil) {
+                    imageToSet = UIImage(data: data! as Data)!
+                }
+                
+                DispatchQueue.main.async(execute: {
+                    self.image = imageToSet
+                    activityIndicator.stopAnimating()
+                    ImageCache.sharedImageCache.addImageToCache(url: url, imageToSave: imageToSet)
+                })
+            }
+        }
+
+    }
 }
