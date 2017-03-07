@@ -22,6 +22,16 @@ public extension UIColor{
     }
     
     public struct Colorerr{
+        public struct SocialMedia{
+            public static let twitter = UIColor(netHex: 0x0084b4)
+            public static let youtube = UIColor(netHex: 0xe52d27)
+            public static let facebook = UIColor(netHex: 0x3b5998)
+            public static let snapchat = UIColor(netHex: 0xfffc00)
+            public static let spotify = UIColor(netHex: 0x84bd00)
+            public static let linkedin = UIColor(netHex: 0x0077B5)
+            public static let vine = UIColor(netHex: 0x00bf8f)
+            public static let quora = UIColor(netHex: 0xa82400)
+        }
         public struct Red{
             public static let regular = UIColor(netHex: 0xff0000)
             public static let light = UIColor(netHex: 0xff7777)
