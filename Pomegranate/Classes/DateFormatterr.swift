@@ -79,14 +79,17 @@ public extension Date {
         var stringFormat = ""
       
         switch format {
-        case .normal:
-            stringFormat = "MMM d, yyyy"
-            
         case .short:
             stringFormat = "dd/MM/yyyy"
+        
+        case .medium:
+            stringFormat = "MMM dd, yyyy"
             
         case .long:
-            stringFormat = "dd/MMM/yyyy, h:mm a"
+            stringFormat = "MMMM dd, yyyy"
+            
+        case .full:
+            stringFormat = "EEEE, MMMM dd, yyyy"
             
         case .weekDay: 
             stringFormat = "EEEE"
@@ -107,8 +110,9 @@ public extension Date {
     //MARK: - Enums
     
     enum DateFormat {
-        case normal
+        case full
         case short
+        case medium
         case long
         case weekDay
         case custom(String)
