@@ -20,10 +20,7 @@ public extension UIImageView{
         else {
             self.image = placeholder
             let activityIndicator = UIActivityIndicatorView()
-            activityIndicator.activityIndicatorViewStyle = .white
-            activityIndicator.startAnimating()
-            activityIndicator.center = self.center
-            self.addSubview(activityIndicator)
+            addActivityIndicator(activityIndicator: activityIndicator)
             DispatchQueue.main.async {
             
                 let data = NSData(contentsOf: url as URL)
@@ -50,10 +47,7 @@ public extension UIImageView{
         }
         else {
             let activityIndicator = UIActivityIndicatorView()
-            activityIndicator.activityIndicatorViewStyle = .white
-            activityIndicator.startAnimating()
-            activityIndicator.center = self.center
-            self.addSubview(activityIndicator)
+            addActivityIndicator(activityIndicator: activityIndicator)
             DispatchQueue.main.async {
                 
                 let data = NSData(contentsOf: url as URL)
@@ -70,6 +64,11 @@ public extension UIImageView{
                 })
             }
         }
-
+    }
+    func addActivityIndicator(activityIndicator: UIActivityIndicatorView){
+        activityIndicator.activityIndicatorViewStyle = .white
+        activityIndicator.startAnimating()
+        activityIndicator.center = self.center
+        self.addSubview(activityIndicator)
     }
 }
