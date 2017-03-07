@@ -51,8 +51,8 @@ public extension UIColor{
         
         public struct Blue{
             public static let regular = UIColor(netHex: 0x0000ff)
-            public static let light = UIColor(netHex: 0x7777ff)
-            public static let dark = UIColor(netHex: 0x000088)
+            public static let light = UIColor(netHex: 0x3333ff)
+            public static let dark = UIColor(netHex: 0x000099)
         }
         public struct Gray{
             public static let regular = UIColor(netHex: 0x7a7a7a)
@@ -71,9 +71,9 @@ public extension UIColor{
             public static let dark = UIColor(netHex: 0xffd588)
         }
         public struct Pink{
-            public static let regular = UIColor(netHex: 0xff4969)
+            public static let regular = UIColor(netHex: 0xf7879a)
             public static let light = UIColor(netHex: 0xff9eaf)
-            public static let dark = UIColor(netHex: 0xe20027)
+            public static let dark = UIColor(netHex: 0xef33f5d)
         }
     }
 }
