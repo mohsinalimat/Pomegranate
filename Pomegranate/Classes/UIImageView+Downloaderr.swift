@@ -19,7 +19,11 @@ public extension UIImageView{
         }
         else {
             self.image = placeholder
-            
+            let activityIndicator = UIActivityIndicatorView()
+            activityIndicator.activityIndicatorViewStyle = .white
+            activityIndicator.startAnimating()
+            activityIndicator.center = self.center
+            self.addSubview(activityIndicator)
             DispatchQueue.main.async {
             
                 let data = NSData(contentsOf: url as URL)
@@ -31,6 +35,7 @@ public extension UIImageView{
                 
                 DispatchQueue.main.async(execute: {
                     self.image = imageToSet
+                    activityIndicator.stopAnimating()
                     ImageCache.sharedImageCache.addImageToCache(url: url, imageToSave: imageToSet)
                 })
             }
