@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIImageView{
+    /// Function to download an image and put a placeholder while it downloads
     public func downloadImageWithPlaceholder(url: NSURL, placeholder: UIImage){
     
         let response = ImageCache.sharedImageCache.checkCacheForImage(url: url)
@@ -38,7 +39,7 @@ public extension UIImageView{
             }
         }
     }
-    
+    /// Download an imge from a URL, no placeholder
     public func downloadImageFromNSURL(url: NSURL){
         let response = ImageCache.sharedImageCache.checkCacheForImage(url: url)
         if (response != nil ) {
@@ -65,7 +66,8 @@ public extension UIImageView{
             }
         }
     }
-    func addActivityIndicator(activityIndicator: UIActivityIndicatorView){
+    /// Function to add an activity indicator to the UIImageViewg
+    private func addActivityIndicator(activityIndicator: UIActivityIndicatorView){
         activityIndicator.activityIndicatorViewStyle = .white
         activityIndicator.startAnimating()
         activityIndicator.center = self.center
