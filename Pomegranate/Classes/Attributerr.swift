@@ -20,7 +20,7 @@ import UIKit
 public class Attributerr{
     
     public static let sharedAttributerr = Attributerr()
-    
+    /// Function to color a substring of a string
     public func colorSubstring(color : UIColor, substring : String, fullString : String) -> NSAttributedString{
         let range = (fullString as NSString).range(of: substring)
         
@@ -29,7 +29,7 @@ public class Attributerr{
         
         return attribute
     }
-    
+    /// Function to add certain attributes to a substring
     public func addAttributeToSubstring(fullString: String, substring: String, backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0 )->NSAttributedString{
         
         let range = (fullString as NSString).range(of: substring)
@@ -45,7 +45,7 @@ public class Attributerr{
         return attribute
         
     }
-    
+    /// Add certain attributes to a NSRange
     public func addAttributesToRange(string: String, range: NSRange, backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0)->NSAttributedString{
         
         let attribute = NSMutableAttributedString.init(string: string)
@@ -60,7 +60,7 @@ public class Attributerr{
         return attribute
 
     }
-    
+    /// Create a string using certain attributes
     public func createString(string: String ,backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0) -> NSAttributedString{
         let attributes: [String: Any] = [
             NSForegroundColorAttributeName: color,
