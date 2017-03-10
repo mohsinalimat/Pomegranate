@@ -12,13 +12,21 @@ class ContentViewController: UIViewController {
     
     @IBOutlet weak var pageTitle: UILabel!
     public var pageIndex = 0
-    public var pageTitleText:String?
+    public var pageTitleText:String? {
+        didSet {
+            if pageTitle?.text != nil {
+               pageTitle.text! = pageTitleText!
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if pageTitleText != nil {
-            pageTitle.text = pageTitleText!
-        }
+        updateView()
+    }
+    
+    func updateView() {
+        pageTitle.text = pageTitleText!
     }
     
 }
