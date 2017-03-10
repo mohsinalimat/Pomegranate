@@ -11,38 +11,55 @@ import Pomegranate
 
 class ColorerrViewController: UIViewController {
     
-    @IBOutlet weak var view1: UIView!
-
-    @IBOutlet weak var view2: UIView!
+    let colors = [UIColor.Colorerr.Blue.light, UIColor.Colorerr.Blue.dark,
+                  UIColor.Colorerr.Pink.light, UIColor.Colorerr.Orange.light,
+                  UIColor.Colorerr.Orange.dark, UIColor.Colorerr.SocialMedia.twitter,
+                  UIColor.Colorerr.SocialMedia.facebook]
     
-    @IBOutlet weak var view3: UIView!
-    
-    @IBOutlet weak var view4: UIView!
-    
-    @IBOutlet weak var view5: UIView!
-    
-    @IBOutlet weak var view6: UIView!
-    
-    @IBOutlet weak var view7: UIView!
-    
-    @IBOutlet weak var view8: UIView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        view1.backgroundColor = UIColor.Colorerr.Blue.light
-        view2.backgroundColor = UIColor.Colorerr.Blue.dark
-        view3.backgroundColor = UIColor.Colorerr.Pink.light
-        view4.backgroundColor = UIColor.Colorerr.Pink.dark
-        view5.backgroundColor = UIColor.Colorerr.Orange.light
-        view6.backgroundColor = UIColor.Colorerr.Orange.dark
-        view7.backgroundColor = UIColor.Colorerr.SocialMedia.twitter
-        view8.backgroundColor = UIColor.Colorerr.SocialMedia.facebook
         
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
+
+extension ColorerrViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ColorerrCollectionViewCell
+        cell.backgroundColor = colors[indexPath.row]
+        cell.layer.cornerRadius = 10
+        cell.layer.masksToBounds = true
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return colors.count
+    }
+}
+
+extension ColorerrViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return CGFloat(20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
+        return CGFloat(20)
+    }
+   
+    
+}
+
+
