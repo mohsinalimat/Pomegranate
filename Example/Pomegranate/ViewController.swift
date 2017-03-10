@@ -11,7 +11,7 @@ import Pomegranate
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let titles : [String] = ["Gradienter","Downloaderr","DateFormatterr","Attributerr","Colorerr"]
+    let titles : [String] = ["Gradienter","Downloaderr","DateFormatterr","Attributerr","Colorerr","PageView"]
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -35,11 +35,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         cell.textLabel?.text = titles[indexPath.row]
         return cell
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

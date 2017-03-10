@@ -111,21 +111,16 @@
 		607FACD21AFB9204008FA782 /* Example for Pomegranate */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
 				AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */,
 				AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */,
 				CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */,
 				CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */,
 				AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */,
 				AF9303F91E67827400163DC6 /* ColorerrViewController.swift */,
-				CFF1620B1E73099400CFF2F8 /* PageViewController.swift */,
-				CFF1620F1E730A5C00CFF2F8 /* ContentViewController.swift */,
-				CFF162101E730A5C00CFF2F8 /* ContentViewController.xib */,
+				CFF162131E730CB800CFF2F8 /* PageView */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for Pomegranate";
 			path = Pomegranate;
@@ -134,6 +129,9 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -173,6 +171,16 @@
 				E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFF162131E730CB800CFF2F8 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				CFF1620B1E73099400CFF2F8 /* PageViewController.swift */,
+				CFF1620F1E730A5C00CFF2F8 /* ContentViewController.swift */,
+				CFF162101E730A5C00CFF2F8 /* ContentViewController.xib */,
+			);
+			name = PageView;
 			sourceTree = "<group>";
 		};
 		D2E7F92BF49C28D32BB90EA4 /* Pods */ = {
