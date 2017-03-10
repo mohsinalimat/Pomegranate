@@ -15,6 +15,7 @@ class ColorerrViewController: UIViewController {
                   UIColor.Colorerr.Pink.light, UIColor.Colorerr.Orange.light,
                   UIColor.Colorerr.Orange.dark, UIColor.Colorerr.SocialMedia.twitter,
                   UIColor.Colorerr.SocialMedia.facebook]
+    let colorNames = ["Blue.light", "Blue.Dark", "Pink.light", "Orange.light", "Orange.dark", "SocialMedia.twitter", "SocialMedia.facebook"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,9 @@ extension ColorerrViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ColorerrCollectionViewCell
         cell.backgroundColor = colors[indexPath.row]
-        cell.colorLabel.text =  String(describing: colors[indexPath.row])
+        cell.colorLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        cell.colorLabel.text = colorNames[indexPath.row]
+        cell.colorLabel.textColor = .white
         cell.layer.cornerRadius = 10
         cell.layer.masksToBounds = true
         return cell
