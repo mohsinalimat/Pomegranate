@@ -311,8 +311,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-u0-wXU">
-                                                    <rect key="frame" x="55.5" y="66.5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-u0-wXU">
+                                                    <rect key="frame" x="8" y="67" width="139" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -320,8 +320,9 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="mTr-u0-wXU" firstAttribute="centerX" secondItem="wUN-sG-1SM" secondAttribute="centerX" id="iMT-53-FdT"/>
-                                            <constraint firstItem="mTr-u0-wXU" firstAttribute="centerY" secondItem="wUN-sG-1SM" secondAttribute="centerY" id="v4v-q4-wjh"/>
+                                            <constraint firstItem="mTr-u0-wXU" firstAttribute="leading" secondItem="wUN-sG-1SM" secondAttribute="leadingMargin" id="C0y-tb-lqf"/>
+                                            <constraint firstItem="mTr-u0-wXU" firstAttribute="centerY" secondItem="wUN-sG-1SM" secondAttribute="centerY" id="CwA-qI-HSw"/>
+                                            <constraint firstItem="mTr-u0-wXU" firstAttribute="centerX" secondItem="wUN-sG-1SM" secondAttribute="centerX" id="tIE-Fv-n3F"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="colorLabel" destination="mTr-u0-wXU" id="DCY-ds-fJa"/>
