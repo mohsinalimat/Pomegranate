@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="29u-8O-bkV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="29u-8O-bkV">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -435,13 +435,29 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-R6-CR0">
+                                <rect key="frame" x="136" y="408" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Colors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mA5-39-8GS">
+                                <rect key="frame" x="103" y="359.5" width="114.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VTe-io-RUh" firstAttribute="top" secondItem="Jcg-R6-CR0" secondAttribute="bottom" constant="44" id="F2e-r0-Lxh"/>
+                            <constraint firstItem="mA5-39-8GS" firstAttribute="centerX" secondItem="DjC-v3-tmW" secondAttribute="centerX" id="F4Z-mG-gsG"/>
                             <constraint firstItem="VTe-io-RUh" firstAttribute="centerX" secondItem="DjC-v3-tmW" secondAttribute="centerX" id="HTv-7n-cIg"/>
+                            <constraint firstItem="Jcg-R6-CR0" firstAttribute="top" secondItem="mA5-39-8GS" secondAttribute="bottom" constant="28" id="WNl-H9-kqa"/>
                             <constraint firstItem="nte-69-KF3" firstAttribute="top" secondItem="VTe-io-RUh" secondAttribute="bottom" constant="20" id="oah-53-C7t"/>
+                            <constraint firstItem="Jcg-R6-CR0" firstAttribute="centerX" secondItem="DjC-v3-tmW" secondAttribute="centerX" id="wSQ-Qt-Fgd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="multipleColorSwitch" destination="Jcg-R6-CR0" id="lMm-i5-agm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHX-bq-cbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
