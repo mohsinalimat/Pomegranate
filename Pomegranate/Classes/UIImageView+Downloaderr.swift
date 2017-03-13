@@ -24,18 +24,9 @@ public extension UIImageView{
             addActivityIndicator(activityIndicator: activityIndicator)
             DispatchQueue.main.async {
             
-                let data = NSData(contentsOf: url as URL)
-                var imageToSet = UIImage()
-                
-                if(data != nil) {
-                    imageToSet = UIImage(data: data! as Data)!
-                }
-                
-                DispatchQueue.main.async(execute: {
-                    self.image = imageToSet
-                    activityIndicator.stopAnimating()
-                    ImageCache.sharedImageCache.addImageToCache(url: url, imageToSave: imageToSet)
-                })
+
+                self.setDataWithURL(url: url)
+                activityIndicator.stopAnimating()
             }
         }
     }
@@ -51,21 +42,27 @@ public extension UIImageView{
             addActivityIndicator(activityIndicator: activityIndicator)
             DispatchQueue.main.async {
                 
-                let data = NSData(contentsOf: url as URL)
-                var imageToSet = UIImage()
-                
-                if(data != nil) {
-                    imageToSet = UIImage(data: data! as Data)!
-                }
-                
-                DispatchQueue.main.async(execute: {
-                    self.image = imageToSet
-                    activityIndicator.stopAnimating()
-                    ImageCache.sharedImageCache.addImageToCache(url: url, imageToSave: imageToSet)
-                })
+                self.setDataWithURL(url: url)
+                activityIndicator.stopAnimating()
             }
         }
     }
+    
+    /// Download image grom a url and set it to the UIImageView
+    private func setDataWithURL(url: NSURL){
+         let data = NSData(contentsOf: url as URL)
+        var imageToSet = UIImage()
+        
+        if(data != nil) {
+            imageToSet = UIImage(data: data! as Data)!
+        }
+        
+        DispatchQueue.main.async(execute: {
+            self.image = imageToSet
+            ImageCache.sharedImageCache.addImageToCache(url: url, imageToSave: imageToSet)
+        })
+    }
+    
     /// Function to add an activity indicator to the UIImageViewg
     private func addActivityIndicator(activityIndicator: UIActivityIndicatorView){
         activityIndicator.activityIndicatorViewStyle = .white
