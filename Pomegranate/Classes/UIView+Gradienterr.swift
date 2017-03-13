@@ -54,6 +54,19 @@ public extension UIView {
     
     func addGradientWithMultipleColors(colors: [CGColor], type: GradientType, animated: Bool){
         // Maybe add the posibility to add a gradient of more then one color
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = self.bounds
+        gradient.colors = colors
+        gradient.startPoint = CGPoint(x: type.points.startX, y: type.points.startY)
+        gradient.endPoint = CGPoint(x: type.points.endX, y: type.points.endY)
+        gradient.zPosition = -1
+        if(animated){
+            UIView.transition(with: self, duration: 0.5, options: .transitionCrossDissolve , animations: {self.layer.addSublayer(gradient)}, completion: nil)
+        }
+        else {
+            self.layer.addSublayer(gradient)
+        }
+
     }
     
     public func deleteGradient(animated: Bool){
