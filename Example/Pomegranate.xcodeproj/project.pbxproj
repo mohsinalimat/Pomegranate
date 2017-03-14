@@ -20,9 +20,6 @@
 		AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */; };
 		CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */; };
 		CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */; };
-		CFF1620C1E73099400CFF2F8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1620B1E73099400CFF2F8 /* PageViewController.swift */; };
-		CFF162111E730A5C00CFF2F8 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1620F1E730A5C00CFF2F8 /* ContentViewController.swift */; };
-		CFF162121E730A5C00CFF2F8 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF162101E730A5C00CFF2F8 /* ContentViewController.xib */; };
 		CFF162151E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF162141E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift */; };
 		EC3B86BACE6EABF2FDACE430 /* Pods_Pomegranate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -58,9 +55,6 @@
 		AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributerrViewController.swift; sourceTree = "<group>"; };
 		CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesFormaterrViewController.swift; sourceTree = "<group>"; };
 		CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
-		CFF1620B1E73099400CFF2F8 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		CFF1620F1E730A5C00CFF2F8 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		CFF162101E730A5C00CFF2F8 /* ContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
 		CFF162141E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorerrCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB044C7CB143757D5AA02D7C /* Pods_Pomegranate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +115,6 @@
 				CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */,
 				CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */,
 				AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */,
-				CFF162131E730CB800CFF2F8 /* PageView */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for Pomegranate";
@@ -173,16 +166,6 @@
 				E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CFF162131E730CB800CFF2F8 /* PageView */ = {
-			isa = PBXGroup;
-			children = (
-				CFF1620B1E73099400CFF2F8 /* PageViewController.swift */,
-				CFF1620F1E730A5C00CFF2F8 /* ContentViewController.swift */,
-				CFF162101E730A5C00CFF2F8 /* ContentViewController.xib */,
-			);
-			name = PageView;
 			sourceTree = "<group>";
 		};
 		CFF162161E731A6D00CFF2F8 /* Colorerr */ = {
@@ -296,7 +279,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF162121E730A5C00CFF2F8 /* ContentViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -410,14 +392,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF162111E730A5C00CFF2F8 /* ContentViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				AFFBC70E1E5CE3B9002CEA47 /* DownloaderrViewController.swift in Sources */,
 				CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */,
 				CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */,
 				AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */,
-				CFF1620C1E73099400CFF2F8 /* PageViewController.swift in Sources */,
 				CFF162151E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift in Sources */,
 				AF9303FA1E67827400163DC6 /* ColorerrViewController.swift in Sources */,
 				AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */,
