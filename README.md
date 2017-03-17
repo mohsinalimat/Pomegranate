@@ -11,19 +11,19 @@ beautiful apps and make hard tasks easy.
 
 Pomegranate is divided in 6 components:
 
-* [Gradienterr](#Gradienterr)
-* [Downloaderr](#Downloaderr)
-* [Date Formaterr](#Date-Formaterr)
-* [Attributerr](#Attributerr)
-* [Colorerr](#Colorerr)
-* [Page View](#Page-View)
+- [Gradienterr](#gradienterr)
+- [Downloaderr](#downloaderr)
+- [Date Formaterr](#date-formaterr)
+- [Attributerr](#attributerr)
+- [Colorerr](#colorerr)
+- [Page View](#page-view)
 
 ## Gradienterr
 
 
 ## Downloaderr
 
-## Date Formaterr
+## Date-Formaterr
 
 ## Attributerr
 
