@@ -10,10 +10,9 @@ import UIKit
 
 public class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
-   
     var pageViewController: UIPageViewController!
     let contentViewController = ContentViewController()
-    var titles = ["Title1","Title2","Title3"]
+    public var titles: Array<String> = []
     
     override public func viewDidLoad() {
         super.viewDidLoad()

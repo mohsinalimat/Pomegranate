@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if (titles[indexPath.row] == "PageView" ) {
             let vc = PageViewController()
+            vc.titles = ["Title1","Title2","Title3"]
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else {
