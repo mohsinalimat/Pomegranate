@@ -20,6 +20,42 @@ Pomegranate is divided in 6 components:
 
 ## Gradienterr
 
+As the name suggests, this is a UIView class extension to add gradients
+to views. It works like this:
+```swift
+myView.addGradient(beginningColor: .blue, endingColor: .yellow, type:
+.leftToRight, animated: true)
+
+``
+
+this will create something like this:
+
+/// Foto de como se ve
+
+The possible gradient types are:
+- .leftToRight
+- .rightToLeft
+- .diagonalLeftToRight
+- .diagonalRightToLeft
+- .topToBottom
+- .bottomToTop
+
+You can also create a gradient with multiple colors like such:
+
+```swift
+myView.addGradientWithMultipleColors(colors: cgColorArray, type:
+.diagonalLeftToRight, animated: true)
+
+```
+
+And finally delete a gradient
+```
+myView.deleteGradiet(animated:true)
+```
+
+Note: This will remove all of the gradients on that view.
+
+
 
 ## Downloaderr
 
