@@ -60,6 +60,8 @@ Note: This will remove all of the gradients on that view.
 
 ## Downloaderr
 
+You
+
 ## Date-Formaterr
 
 ## Attributerr
@@ -85,8 +87,8 @@ pod "Pomegranate"
 
 ## Author
 
-[tonyyasi](#https://github.com/tonyyasi)
-[Jelizondo](#https://github.com/jelizondo)
+[tonyyasi](https://github.com/tonyyasi)
+[Jelizondo](https://github.com/jelizondo)
 
 ## License
 
