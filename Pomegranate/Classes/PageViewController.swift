@@ -10,13 +10,15 @@ import UIKit
 
 public class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
+   
     var pageViewController: UIPageViewController!
     let contentViewController = ContentViewController()
-    let titles = ["Title1","Title2","Title3"]
+    var titles = ["Title1","Title2","Title3"]
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.white
         pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         pageViewController.dataSource = self
         
@@ -24,11 +26,12 @@ public class PageViewController: UIViewController, UIPageViewControllerDataSourc
         let viewControllers = [startingViewController]
         pageViewController.setViewControllers(viewControllers, direction: .forward, animated: false, completion: nil)
         pageViewController.view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height);
+        pageViewController.view.setNeedsLayout()
         
         addChildViewController(pageViewController)
         view.addSubview(pageViewController!.view)
         pageViewController.didMove(toParentViewController: self)
-        
+       
     }
     
     func viewControllerAt(index: Int) -> ContentViewController? {
