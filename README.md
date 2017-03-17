@@ -26,7 +26,8 @@ to views. It works like this:
 myView.addGradient(beginningColor: .blue, endingColor: .yellow, type:
 .leftToRight, animated: true)
 
-``
+```
+
 
 this will create something like this:
 
