@@ -26,8 +26,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: titles[indexPath.row])
-        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        if (titles[indexPath.row] == "PageView" ) {
+            let vc = PageViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: titles[indexPath.row])
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -36,6 +43,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = titles[indexPath.row]
         return cell
     }
-
 }
 

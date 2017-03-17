@@ -11,22 +11,22 @@ import UIKit
 class ContentViewController: UIViewController {
     
     @IBOutlet weak var pageTitle: UILabel!
+    
     public var pageIndex = 0
-    public var pageTitleText:String? {
-        didSet {
-            if pageTitle?.text != nil {
-               pageTitle.text! = pageTitleText!
-            }
-        }
-    }
+    public var pageTitleText:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //updateView()
+        updateView()
     }
     
     func updateView() {
-        pageTitle.text = pageTitleText!
+        pageTitle.text = pageTitleText
     }
     
+    public static func contentViewController() -> ContentViewController {
+        let bundle = Bundle(for: self)
+        let controller = ContentViewController(nibName: "ContentViewController", bundle: bundle)
+        return controller
+    }
 }

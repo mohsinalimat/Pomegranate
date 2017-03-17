@@ -8,13 +8,13 @@
 
 import UIKit
 
-class PageViewController: UIViewController, UIPageViewControllerDataSource {
+public class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     var pageViewController: UIPageViewController!
     let contentViewController = ContentViewController()
     let titles = ["Title1","Title2","Title3"]
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -37,7 +37,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             return nil
         }
         
-        let vc:ContentViewController = ContentViewController()
+        let vc:ContentViewController = ContentViewController.contentViewController()
         vc.pageIndex = index
         vc.pageTitleText = titles[index]
         
@@ -46,7 +46,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     
     // MARK: - DataSource
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let vc = viewController as! ContentViewController
         var index:Int = vc.pageIndex
         
@@ -60,7 +60,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let vc = viewController as! ContentViewController
         var index:Int = vc.pageIndex
         

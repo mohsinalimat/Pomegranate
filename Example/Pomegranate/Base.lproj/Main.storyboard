@@ -348,24 +348,6 @@
             </objects>
             <point key="canvasLocation" x="3380.625" y="130.98591549295776"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="cDb-Ke-Nxu">
-            <objects>
-                <viewController storyboardIdentifier="PageView" id="yVA-Kk-SuA" customClass="PageViewController" customModule="Pomegranate" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wSM-8y-iBF"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fcw-LV-1Qh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aA6-YL-Kxb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tzW-sv-dOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4121" y="131"/>
-        </scene>
         <!--Gradient View Controller-->
         <scene sceneID="jvn-3A-0s3">
             <objects>
