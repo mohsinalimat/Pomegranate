@@ -5,6 +5,32 @@
 [![License](https://img.shields.io/cocoapods/l/Pomegranate.svg?style=flat)](http://cocoapods.org/pods/Pomegranate)
 [![Platform](https://img.shields.io/cocoapods/p/Pomegranate.svg?style=flat)](http://cocoapods.org/pods/Pomegranate)
 
+Pomegranate is all about creating easy UI for your applications. Inside
+this library you have a bunch of class extensions to help you build
+beautiful apps and make hard tasks easy.
+
+Pomegranate is divided in 6 components:
+
+* [Gradienterr](#Gradienterr)
+* [Downloaderr](#Downloaderr)
+* [Date Formaterr](#Date-Formaterr)
+* [Attributerr](#Attributerr)
+* [Colorerr](#Colorerr)
+* [Page View](#Page-View)
+
+## Gradienterr
+
+
+## Downloaderr
+
+## Date Formaterr
+
+## Attributerr
+
+## Colorerr
+
+## Page View
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,8 +48,8 @@ pod "Pomegranate"
 
 ## Author
 
-tonyyasi, tonyyasi@gmail.com
-Jelizondo
+[tonyyasi](#https://github.com/tonyyasi)
+[Jelizondo](#https://github.com/jelizondo)
 
 ## License
 
