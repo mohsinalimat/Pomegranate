@@ -67,6 +67,8 @@ You
 This is a Date class extension that provides different options in converitng a string into a Date or vice versa. 
 It works like this:
 
+/// Foto de como se ve
+
 Creating Dates:
 ```swift
 let date = Date(dateInString: "15/03/2017",dateFormat: "dd/MM/yyyy")!
@@ -105,6 +107,18 @@ Possible TimeLanguage formats to customize
 ## Colorerr
 
 ## Page View
+
+This is a head start in creating a page view that is used for an introduction of an application. It looks somthing like this:
+
+/// Foto de como se ve
+
+To get started in creating one, you can do this:
+```swift
+let vc = PageViewController()
+vc.titles = ["Title1","Title2","Title3"]
+self.navigationController?.pushViewController(vc, animated: true)
+
+```
 
 ## Example
 
