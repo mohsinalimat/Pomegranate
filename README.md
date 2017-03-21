@@ -75,15 +75,16 @@ It works as follows:
 
 /// Foto de como se ve
 
-You can also use:
+Other functions available:
 
-- `downloadImageFromNSURL(url: NSURL)`
-
+Function | Parameters|Use
+------------ | ------------ | -------------
+downloadImageFromNSURL() | url | download Image from a URL without placeholder
 
 
 ## Date-Formaterr
 
-This is a Date class extension that provides different options in converitng a string into a Date or vice versa. 
+This is a Date class extension that provides different options in converitng a string into a Date or vice versa.
 It works like this:
 
 /// Foto de como se ve
