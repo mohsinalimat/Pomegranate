@@ -103,7 +103,7 @@ string = date.convertTo(format: .custom("dd-MM-yyyy"))
 
 ```
 
-Possible formats for converting dates to strings 
+Possible formats for converting dates to strings
 - .full
 - .short
 - .medium
@@ -122,6 +122,38 @@ Possible TimeLanguage formats to customize
 
 
 ## Attributerr
+
+Adding attributes to a string is pretty weird, let's face it. We decided
+to make it easier like such:
+
+```swift
+myLabel.attributedText = Attributerr.sharedAttributerr.createString(string: "Hello World!", backgroundColor: .red, font: .systemFont(ofSize: 20), color: .blue, underLineStyle: 0)
+```
+
+This will create something like this:
+
+
+/// Foto
+
+All of the parameters except the string value have default values, so you don't need to set them
+all on the function call.
+
+This are the default values used:
+
+- backgroundColor = .clear
+- font = UIFont(name: "System", size: 12)!
+- color = .black
+- underLineStyle = 0
+
+This segment comes with other handy functions like the following
+
+Function | Use
+------------ | -------------
+addAttributesToRange() | Add attributes to a NSRange
+addAttributesToSubstring() | Adds attributes to a substring of your string
+
+
+
 
 ## Colorerr
 This is a UIColor extension that provides popular color options.
