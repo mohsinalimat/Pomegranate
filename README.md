@@ -60,7 +60,25 @@ Note: This will remove all of the gradients on that view.
 
 ## Downloaderr
 
-You
+Downloading images from a URL can be awkward sometimes, that's where
+Downloaderr comes to the rescue. Downloaderr is a UIImageView extension used
+to  download images from a URL and even put a placeholder while the download
+is happening. Downloaderr also saves your images on a temporary cache so
+you don't download the same image twice.
+
+It works as follows:
+
+´´´swift
+ myImageView.downloadImageWithPlaceholder(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg")!, placeholder: UIImage(named: "placeholder")!)
+
+´´´
+
+/// Foto de como se ve
+
+You can also use:
+- downloadImageFromNSURL(url: NSURL)
+
+
 
 ## Date-Formaterr
 
