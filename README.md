@@ -157,7 +157,8 @@ default values.
 
 
 ## Colorerr
-This is a UIColor extension that provides popular color options.
+This is a UIColor extension that provides popular color options to
+create beautiful UI.
 
 /// Foto de como se ve
 
@@ -171,6 +172,18 @@ Color options:
 - Yellow
 - Orange
 - Pink
+
+Each color let's you pick the intensity, for example:
+
+```swift
+UIColor.Colorerr.Blue.dark
+```
+
+The intensities can be:
+
+- dark
+- light
+- regular
 
 
 ## Page View
