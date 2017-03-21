@@ -41,18 +41,13 @@ The possible gradient types are:
 - .topToBottom
 - .bottomToTop
 
-You can also create a gradient with multiple colors like such:
+Other functions available:
 
-```swift
-myView.addGradientWithMultipleColors(colors: cgColorArray, type:
-.diagonalLeftToRight, animated: true)
+Function | Parameters| Use
+------------ | ------------ | -------------
+addGRadientWithMultipleColors() | [CGColor], type, animated | Adds gradient with multiple colors
+deleteGradient() | animated | Deletes all of the gradients on the current view
 
-```
-
-And finally delete a gradient
-```
-myView.deleteGradiet(animated:true)
-```
 
 Note: This will remove all of the gradients on that view.
 
