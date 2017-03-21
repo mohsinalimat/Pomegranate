@@ -64,6 +64,42 @@ You
 
 ## Date-Formaterr
 
+This is a Date class extension that provides different options in converitng a string into a Date or vice versa. 
+It works like this:
+
+Creating Dates:
+```swift
+let date = Date(dateInString: "15/03/2017",dateFormat: "dd/MM/yyyy")!
+
+```
+
+Converting dates to strings:
+```swift
+string = date.toTimeLanguage()
+string = date.toTimeLanguage([.oneDayago:"Yesterday"])
+string = date.convertTo(format: .short)
+string = date.convertTo(format: .custom("dd-MM-yyyy"))
+
+```
+
+Possible formats for converting dates to strings 
+- .full
+- .short
+- .medium
+- .long
+- .weekDay
+- .custom(String)
+
+Possible TimeLanguage formats to customize
+- .rightNow -> custom string: A moment ago
+- .oneDayAgo -> custom string: One day ago
+- .oneYearAgo -> custom string: One year ago
+- .yearsAgo -> custom string: (years) years ago
+- .daysAgo -> custom string: (days) days ago
+- .minutesAgo -> custom string: (minutes) minutes ago
+- .oneMinuteAgo -> custom string: One minute ago
+
+
 ## Attributerr
 
 ## Colorerr
