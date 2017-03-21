@@ -64,7 +64,7 @@ you don't download the same image twice.
 It works as follows:
 
 ```swift
- myImageView.downloadImageWithPlaceholder(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg")!, placeholder: UIImage(named: "placeholder")!)
+ myImageView.downloadImageWith(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg")!, placeholder: UIImage(named: "placeholder")!)
 
 ```
 
@@ -74,7 +74,7 @@ Other functions available:
 
 Function | Parameters|Use
 ------------ | ------------ | -------------
-downloadImageFromNSURL() | url | download Image from a URL without placeholder
+downloadImageFrom(url:) | url | download Image from a URL without placeholder
 
 
 ## Date-Formaterr
