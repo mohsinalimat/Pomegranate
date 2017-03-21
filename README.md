@@ -145,14 +145,15 @@ This are the default values used:
 - color = .black
 - underLineStyle = 0
 
-This segment comes with other handy functions like the following
+This segment comes with other handy functions like the following:
 
 Function | Parameters|Use
 ------------ | ------------ | -------------
 addAttributesToRange() | string, NSRange, attributes |Add attributes to a NSRange
 addAttributesToSubstring() | string, substring, attributes |Adds attributes to a substring of your string
 
-
+The attributes parameter is the list of available parameters that have
+default values.
 
 
 ## Colorerr
