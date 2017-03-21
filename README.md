@@ -49,7 +49,7 @@ addGRadientWithMultipleColors() | [CGColor], type, animated | Adds gradient with
 deleteGradient() | animated | Deletes all of the gradients on the current view
 
 
-Note: This will remove all of the gradients on that view.
+**Note:** This will remove all of the gradients on that view.
 
 
 
