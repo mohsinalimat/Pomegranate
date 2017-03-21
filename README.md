@@ -147,10 +147,10 @@ This are the default values used:
 
 This segment comes with other handy functions like the following
 
-Function | Use
------------- | -------------
-addAttributesToRange() | Add attributes to a NSRange
-addAttributesToSubstring() | Adds attributes to a substring of your string
+Function | Parameters|Use
+------------ | ------------ | -------------
+addAttributesToRange() | string, NSRange, attributes |Add attributes to a NSRange
+addAttributesToSubstring() | string, substring, attributes |Adds attributes to a substring of your string
 
 
 
