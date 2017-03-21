@@ -1,7 +1,5 @@
 ![alt text](http://i.imgur.com/gsGKA4N.png)
 
-# Pomegranate
-
 [![CI Status](http://img.shields.io/travis/tonyyasi/Pomegranate.svg?style=flat)](https://travis-ci.org/tonyyasi/Pomegranate)
 [![Version](https://img.shields.io/cocoapods/v/Pomegranate.svg?style=flat)](http://cocoapods.org/pods/Pomegranate)
 [![License](https://img.shields.io/cocoapods/l/Pomegranate.svg?style=flat)](http://cocoapods.org/pods/Pomegranate)
