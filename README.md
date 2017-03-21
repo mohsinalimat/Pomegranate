@@ -76,7 +76,8 @@ It works as follows:
 /// Foto de como se ve
 
 You can also use:
-- downloadImageFromNSURL(url: NSURL)
+
+- `downloadImageFromNSURL(url: NSURL)`
 
 
 
