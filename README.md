@@ -1,3 +1,5 @@
+![alt text](http://i.imgur.com/gsGKA4N.png)
+
 # Pomegranate
 
 [![CI Status](http://img.shields.io/travis/tonyyasi/Pomegranate.svg?style=flat)](https://travis-ci.org/tonyyasi/Pomegranate)
