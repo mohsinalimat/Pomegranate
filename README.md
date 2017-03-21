@@ -123,7 +123,7 @@ Adding attributes to a string is pretty weird, let's face it. We decided
 to make it easier like such:
 
 ```swift
-myLabel.attributedText = Attributerr.sharedAttributerr.createString(string: "Hello World!", backgroundColor: .red, font: .systemFont(ofSize: 20), color: .blue, underLineStyle: 0)
+myLabel.attributedText = Attributerr.sharedAttributerr.create(string: "Hello World!", backgroundColor: .red, font: .systemFont(ofSize: 20), color: .blue, underLineStyle: 0)
 ```
 
 This will create something like this:
