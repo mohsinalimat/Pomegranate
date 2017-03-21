@@ -31,7 +31,7 @@ myView.addGradient(beginningColor: .blue, endingColor: .yellow, type:
 
 this will create something like this:
 
-![](http://i.imgur.com/MAx1irh.gifv)
+![](http://i.imgur.com/MAx1irh.gif)
 
 The possible gradient types are:
 - .leftToRight
