@@ -68,10 +68,10 @@ you don't download the same image twice.
 
 It works as follows:
 
-´´´swift
+```swift
  myImageView.downloadImageWithPlaceholder(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg")!, placeholder: UIImage(named: "placeholder")!)
 
-´´´
+```
 
 /// Foto de como se ve
 
