@@ -105,6 +105,21 @@ Possible TimeLanguage formats to customize
 ## Attributerr
 
 ## Colorerr
+This is a UIColor extension that provides popular color options.
+
+/// Foto de como se ve
+
+Color options:
+- SocialMedia
+- Red
+- Green
+- Purple
+- Blue
+- Gray
+- Yellow
+- Orange
+- Pink
+
 
 ## Page View
 
