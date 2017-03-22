@@ -109,6 +109,16 @@ public extension Date {
     
     //MARK: - Enums
     
+    /**
+     Date formats
+     
+     - full: EEEE, MMMM dd, yyyy
+     - short: dd/MM/yyyy
+     - medium: MMM dd, yyyy
+     - long: EEEE, MMMM dd, yyyy
+     - weekDay: EEEE
+     - custom
+     */
     enum DateFormat {
         case full
         case short
