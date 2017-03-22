@@ -29,7 +29,7 @@ myView.addGradient(beginningColor: .blue, endingColor: .yellow, type:
 ```
 
 
-this will create something like this:
+This will create something like this:
 
 ![](http://i.imgur.com/u6rrOjs.gif)
 
@@ -99,13 +99,15 @@ string = date.convertTo(format: .custom("dd-MM-yyyy"))
 
 ```
 
-Possible formats for converting dates to strings
+Possible formats for converting dates to strings:
 - .full
 - .short
 - .medium
 - .long
 - .weekDay
 - .custom(String)
+
+Time language formats to customize:
 
 Format | Custom string
 ------------ | ------------
