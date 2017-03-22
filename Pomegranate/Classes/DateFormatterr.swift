@@ -121,7 +121,6 @@ public extension Date {
     enum TimeRelativeToDate {
         case rightNow
         case oneDayAgo
-        case tomorrow
         case oneYearAgo
         case yearsAgo
         case daysAgo

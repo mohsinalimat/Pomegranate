@@ -16,8 +16,7 @@ class DateFormatterrViewController: UIViewController {
     
     let dates = [Date(),
                  Date(timeIntervalSinceNow: 86400 * -1),
-                 Date(dateInString: "15/03/1995",dateFormat: "dd/MM/yyyy")!,
-                 Date(dateInString: "15/03/2016",dateFormat: "dd/MM/yyyy")!,
+                 Date(dateInString: "15/03/2017",dateFormat: "dd/MM/yyyy")!,
                  Date(dateInString: "25/02/2017",dateFormat: "dd/MM/yyyy")!
                  ]
 }
