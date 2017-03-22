@@ -100,9 +100,9 @@ public extension Date {
             }
         }
         
-        var dateFormatter = DateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = stringFormat
-        var dateString = dateFormatter.string(from: self)
+        let dateString = dateFormatter.string(from: self)
         
         return dateString
     }
