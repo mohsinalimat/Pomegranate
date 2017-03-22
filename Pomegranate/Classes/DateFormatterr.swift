@@ -75,6 +75,21 @@ public extension Date {
         }
     }
     
+    /**
+     Converts Date to strign with the given format.
+     
+     - Parameter format: A DateFormat.
+     
+     Date formats
+     
+     - full: EEEE, MMMM dd, yyyy
+     - short: dd/MM/yyyy
+     - medium: MMM dd, yyyy
+     - long: EEEE, MMMM dd, yyyy
+     - weekDay: EEEEt
+     - custom("Your format")
+     
+     */
     func convertTo(format:DateFormat) -> String {
         var stringFormat = ""
       
@@ -127,6 +142,7 @@ public extension Date {
         case weekDay
         case custom(String)
     }
+    
     /**
      Time relative to date formats
      
@@ -138,7 +154,6 @@ public extension Date {
      - minutesAgo:  (minutes) minutes ago
      - oneMinuteAgo:  One minute ago
      */
-    
     enum TimeRelativeToDate {
         case rightNow
         case oneDayAgo
