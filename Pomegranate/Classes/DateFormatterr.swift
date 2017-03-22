@@ -127,6 +127,17 @@ public extension Date {
         case weekDay
         case custom(String)
     }
+    /**
+     Time relative to date formats
+     
+     - rightNow:  A moment ago
+     - oneDayAgo:  One day ago
+     - oneYearAgo:  One year ago
+     - yearsAgo:  (years) years and (days) days ago
+     - daysAgo:  (days) days ago
+     - minutesAgo:  (minutes) minutes ago
+     - oneMinuteAgo:  One minute ago
+     */
     
     enum TimeRelativeToDate {
         case rightNow
