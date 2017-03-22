@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Pomegranate/Classes/**/*"
+  "source_files": "Pomegranate/Classes/**/*",
+  "resources": "Pomegranate/Assets/**/*.{xib}"
 }

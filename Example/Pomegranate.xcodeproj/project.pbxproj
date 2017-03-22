@@ -14,6 +14,13 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */; };
+		AF9303FA1E67827400163DC6 /* ColorerrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9303F91E67827400163DC6 /* ColorerrViewController.swift */; };
+		AFFBC70E1E5CE3B9002CEA47 /* DownloaderrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */; };
+		AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */; };
+		CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */; };
+		CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */; };
+		CFF162151E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF162141E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift */; };
 		EC3B86BACE6EABF2FDACE430 /* Pods_Pomegranate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +49,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		AED386188AF23E90F2A09EB2 /* Pomegranate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pomegranate.podspec; path = ../Pomegranate.podspec; sourceTree = "<group>"; };
+		AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		AF9303F91E67827400163DC6 /* ColorerrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorerrViewController.swift; sourceTree = "<group>"; };
+		AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloaderrViewController.swift; sourceTree = "<group>"; };
+		AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributerrViewController.swift; sourceTree = "<group>"; };
+		CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesFormaterrViewController.swift; sourceTree = "<group>"; };
+		CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		CFF162141E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorerrCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB044C7CB143757D5AA02D7C /* Pods_Pomegranate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomegranate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB134D7ABB01BFFB7C4BBB67 /* Pods-Pomegranate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomegranate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pomegranate_Tests/Pods-Pomegranate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,11 +107,14 @@
 		607FACD21AFB9204008FA782 /* Example for Pomegranate */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				CFF162161E731A6D00CFF2F8 /* Colorerr */,
+				AF215F8D1E5BAD1E00569A5B /* GradientViewController.swift */,
+				AFFBC70D1E5CE3B9002CEA47 /* DownloaderrViewController.swift */,
+				CFAEEF921E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift */,
+				CFAEEF941E5DFE5200EC89B1 /* DateTableViewCell.swift */,
+				AFFF62741E5E4E66002A3860 /* AttributerrViewController.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for Pomegranate";
@@ -107,6 +124,9 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -146,6 +166,15 @@
 				E04E7BC7FDB063AF80BC007E /* Pods_Pomegranate_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFF162161E731A6D00CFF2F8 /* Colorerr */ = {
+			isa = PBXGroup;
+			children = (
+				CFF162141E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift */,
+				AF9303F91E67827400163DC6 /* ColorerrViewController.swift */,
+			);
+			name = Colorerr;
 			sourceTree = "<group>";
 		};
 		D2E7F92BF49C28D32BB90EA4 /* Pods */ = {
@@ -215,10 +244,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = C2UY5E875D;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = C2UY5E875D;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -363,6 +394,13 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				AFFBC70E1E5CE3B9002CEA47 /* DownloaderrViewController.swift in Sources */,
+				CFAEEF951E5DFE5200EC89B1 /* DateTableViewCell.swift in Sources */,
+				CFAEEF931E5DF5DA00EC89B1 /* DatesFormaterrViewController.swift in Sources */,
+				AF215F8E1E5BAD1E00569A5B /* GradientViewController.swift in Sources */,
+				CFF162151E731A6100CFF2F8 /* ColorerrCollectionViewCell.swift in Sources */,
+				AF9303FA1E67827400163DC6 /* ColorerrViewController.swift in Sources */,
+				AFFF62751E5E4E66002A3860 /* AttributerrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -497,6 +535,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2UY5E875D;
 				INFOPLIST_FILE = Pomegranate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -512,6 +551,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2UY5E875D;
 				INFOPLIST_FILE = Pomegranate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -525,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB134D7ABB01BFFB7C4BBB67 /* Pods-Pomegranate_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = C2UY5E875D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -545,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F05C6D42CD2AE86ECC32F5A4 /* Pods-Pomegranate_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = C2UY5E875D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

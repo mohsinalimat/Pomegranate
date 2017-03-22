@@ -23,6 +23,7 @@ pod "Pomegranate"
 ## Author
 
 tonyyasi, tonyyasi@gmail.com
+Jelizondo
 
 ## License
 
