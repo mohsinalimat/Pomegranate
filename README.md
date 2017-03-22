@@ -68,7 +68,7 @@ It works as follows:
 
 ```
 
-/// Foto de como se ve
+![](http://i.imgur.com/3c5hhl7.gif)
 
 Other functions available:
 
@@ -82,7 +82,7 @@ downloadImageFrom(url:) | url | download Image from a URL without placeholder
 This is a Date class extension that provides different options in converitng a string into a Date or vice versa.
 It works like this:
 
-/// Foto de como se ve
+![](http://i.imgur.com/FzhLjwj.gif)
 
 Creating Dates:
 ```swift
@@ -108,13 +108,15 @@ Possible formats for converting dates to strings
 - .custom(String)
 
 Possible TimeLanguage formats to customize
-- .rightNow -> custom string: A moment ago
-- .oneDayAgo -> custom string: One day ago
-- .oneYearAgo -> custom string: One year ago
-- .yearsAgo -> custom string: (years) years ago
-- .daysAgo -> custom string: (days) days ago
-- .minutesAgo -> custom string: (minutes) minutes ago
-- .oneMinuteAgo -> custom string: One minute ago
+Format | Custom string
+------------ | ------------
+ .rightNow | A moment ago
+ .oneDayAgo | One day ago
+ .oneYearAgo | One year ago
+ .yearsAgo | (years) years ago
+ .daysAgo | (days) days ago
+ .minutesAgo | (minutes) minutes ago
+ .oneMinuteAgo | One minute ago
 
 
 ## Attributerr
@@ -128,8 +130,7 @@ myLabel.attributedText = Attributerr.sharedAttributerr.create(string: "Hello Wor
 
 This will create something like this:
 
-
-/// Foto
+![](http://i.imgur.com/YfDBV82.gif)
 
 All of the parameters except the string value have default values, so you don't need to set them
 all on the function call.
@@ -156,7 +157,7 @@ default values.
 This is a UIColor extension that provides popular color options to
 create beautiful UI.
 
-/// Foto de como se ve
+![](http://i.imgur.com/JcH3LVk.gif)
 
 Color options:
 - SocialMedia
@@ -186,7 +187,7 @@ The intensities can be:
 
 This is a head start in creating a page view that is used for an introduction of an application. It looks somthing like this:
 
-/// Foto de como se ve
+![](http://i.imgur.com/TPUx493.gif)
 
 To get started in creating one, you can do this:
 ```swift
