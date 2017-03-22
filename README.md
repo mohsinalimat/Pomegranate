@@ -31,7 +31,7 @@ myView.addGradient(beginningColor: .blue, endingColor: .yellow, type:
 
 this will create something like this:
 
-![](http://i.imgur.com/MAx1irh.gif)
+![](http://i.imgur.com/u6rrOjs.gif)
 
 The possible gradient types are:
 - .leftToRight
@@ -68,7 +68,7 @@ It works as follows:
 
 ```
 
-![](http://i.imgur.com/3c5hhl7.gif)
+![](http://i.imgur.com/OOphxTO.gif)
 
 Other functions available:
 
@@ -82,7 +82,7 @@ downloadImageFrom(url:) | url | download Image from a URL without placeholder
 This is a Date class extension that provides different options in converitng a string into a Date or vice versa.
 It works like this:
 
-![](http://i.imgur.com/FzhLjwj.gif)
+![](http://i.imgur.com/tcjuttE.gif)
 
 Creating Dates:
 ```swift
@@ -107,7 +107,6 @@ Possible formats for converting dates to strings
 - .weekDay
 - .custom(String)
 
-Possible TimeLanguage formats to customize
 Format | Custom string
 ------------ | ------------
  .rightNow | A moment ago
@@ -130,7 +129,7 @@ myLabel.attributedText = Attributerr.sharedAttributerr.create(string: "Hello Wor
 
 This will create something like this:
 
-![](http://i.imgur.com/YfDBV82.gif)
+![](http://i.imgur.com/X2cMino.gif)
 
 All of the parameters except the string value have default values, so you don't need to set them
 all on the function call.
@@ -157,7 +156,7 @@ default values.
 This is a UIColor extension that provides popular color options to
 create beautiful UI.
 
-![](http://i.imgur.com/JcH3LVk.gif)
+![](http://i.imgur.com/sFHlWCQ.gif)
 
 Color options:
 - SocialMedia
@@ -187,7 +186,7 @@ The intensities can be:
 
 This is a head start in creating a page view that is used for an introduction of an application. It looks somthing like this:
 
-![](http://i.imgur.com/TPUx493.gif)
+![](http://i.imgur.com/qxT7R3O.gif)
 
 To get started in creating one, you can do this:
 ```swift
