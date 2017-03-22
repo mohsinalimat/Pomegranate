@@ -18,7 +18,7 @@ class DownloaderrViewController: UIViewController {
     }
 
     @IBAction func downloadImagePressed(_ sender: UIButton) {
-        imageView.downloadImageWithPlaceholder(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg")!, placeholder: UIImage(named: "placeholder")!)
+        imageView.downloadImageWith(url: NSURL(string: "https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg")!, placeholder: UIImage(named: "placeholder")!)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
