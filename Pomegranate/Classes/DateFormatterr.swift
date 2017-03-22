@@ -45,7 +45,21 @@ public extension Date {
     }
    
     //MARK: - Dates to strings
-    
+    /**
+     Converts Date to strings in time language, A moment ago, One day ago, etc.
+     
+     - Parameter timeLanguages: Dictionary of type TimeRelativeToDate:String (if no parameter is provided then the custom formats will be used).
+     
+     Time relative to date formats
+
+     - rightNow:  A moment ago
+     - oneDayAgo:  One day ago
+     - oneYearAgo:  One year ago
+     - yearsAgo:  (years) years and (days) days ago
+     - daysAgo:  (days) days ago
+     - minutesAgo:  (minutes) minutes ago
+     - oneMinuteAgo:  One minute ago
+     */
     func toTimeLanguage(timeLanguages: [TimeRelativeToDate:String]? = nil) -> String {
         let days = Int(self.timeIntervalInDaysSinceNow() * -1)
         let years = Int(self.timeIntervalInYearsSinceNow() * -1)
@@ -86,7 +100,7 @@ public extension Date {
      - short: dd/MM/yyyy
      - medium: MMM dd, yyyy
      - long: EEEE, MMMM dd, yyyy
-     - weekDay: EEEEt
+     - weekDay: EEEE
      - custom("Your format")
      
      */
