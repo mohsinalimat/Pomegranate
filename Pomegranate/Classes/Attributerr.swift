@@ -61,7 +61,7 @@ public class Attributerr{
 
     }
     /// Create a string using certain attributes
-    public func createString(string: String ,backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0) -> NSAttributedString{
+    public func create(string: String ,backgroundColor: UIColor = .clear , font: UIFont = UIFont(name: "System", size: 12)!, color: UIColor = .black, underLineStyle: Int = 0) -> NSAttributedString{
         let attributes: [String: Any] = [
             NSForegroundColorAttributeName: color,
             NSFontAttributeName: font,
